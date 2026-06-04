@@ -1,0 +1,49 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file>icons/adc.png</file>
+    <file>icons/advanced.png</file>
+    <file>icons/ammeter.png</file>
+    <file>icons/app.png</file>
+    <file>icons/battery.png</file>
+    <file>icons/capacitor.png</file>
+    <file>icons/clock.png</file>
+    <file>icons/dac.png</file>
+    <file>icons/dff.png</file>
+    <file>icons/digital.png</file>
+    <file>icons/drc.png</file>
+    <file>icons/export.png</file>
+    <file>icons/gate.png</file>
+    <file>icons/ground.png</file>
+    <file>icons/inductor.png</file>
+    <file>icons/interactive.png</file>
+    <file>icons/keypad.png</file>
+    <file>icons/lcd.png</file>
+    <file>icons/led.png</file>
+    <file>icons/mcu.png</file>
+    <file>icons/measurement.png</file>
+    <file>icons/new.png</file>
+    <file>icons/open.png</file>
+    <file>icons/oscilloscope.png</file>
+    <file>icons/passive.png</file>
+    <file>icons/pause.png</file>
+    <file>icons/probe.png</file>
+    <file>icons/pushbutton.png</file>
+    <file>icons/redo.png</file>
+    <file>icons/resistor.png</file>
+    <file>icons/run.png</file>
+    <file>icons/save.png</file>
+    <file>icons/save_as.png</file>
+    <file>icons/sevensegment.png</file>
+    <file>icons/source.png</file>
+    <file>icons/step.png</file>
+    <file>icons/stop.png</file>
+    <file>icons/switch.png</file>
+    <file>icons/undo.png</file>
+    <file>icons/voltmeter.png</file>
+    <file>icons/wire.png</file>
+  </qresource>
+
+  <qresource prefix="/help">
+    <file alias="user_guide.html">help/user_guide.html</file>
+  </qresource>
+</RCC>
