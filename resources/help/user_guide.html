@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ProteusClone User Guide</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; line-height: 1.45; margin: 24px; }
+  h1 { font-size: 26px; margin-bottom: 6px; }
+  h2 { border-bottom: 1px solid #808080; padding-bottom: 4px; margin-top: 26px; }
+  h3 { margin-top: 18px; }
+  code { border: 1px solid #808080; padding: 2px 5px; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 18px 0; }
+  th, td { border: 1px solid #808080; padding: 7px 9px; vertical-align: top; }
+  th { font-weight: bold; }
+  .note { border-left: 4px solid #f9a825; padding: 10px 12px; margin: 12px 0; }
+  .ok { border-left: 4px solid #2e7d32; padding: 10px 12px; margin: 12px 0; }
+  .warn { border-left: 4px solid #c62828; padding: 10px 12px; margin: 12px 0; }
+  ul { margin-top: 6px; }
+</style>
+</head>
+<body>
+<h1>ProteusClone User Guide</h1>
+<p><b>ProteusClone</b> is an educational Proteus-like circuit design and simulation program built for an Object-Oriented Programming project. This guide explains the main workflow, controls, circuit editing tools, simulation behavior, instruments, file handling, and troubleshooting tips.</p>
+
+<h2>1. Quick Start</h2>
+<ol>
+  <li>Start the application.</li>
+  <li>Choose <b>New Project</b> from the start dialog or from <b>File &gt; New</b>.</li>
+  <li>Select a canvas size preset or enter a custom width and height.</li>
+  <li>Pick components from the <b>Library</b> dock on the left.</li>
+  <li>Click on the canvas to place the selected component.</li>
+  <li>Use <b>Wire Mode</b> or press <code>W</code> to connect pins.</li>
+  <li>Press <code>F5</code> or use <b>Simulation &gt; Run</b> to start simulation.</li>
+</ol>
+
+<h2>2. Main Window Layout</h2>
+<table>
+<tr><th>Area</th><th>Purpose</th></tr>
+<tr><td>Canvas</td><td>Main schematic editing area. Components, wires, junctions, probes, and instruments are placed here.</td></tr>
+<tr><td>Library dock</td><td>Search, filter, preview, and choose circuit components.</td></tr>
+<tr><td>Properties dock</td><td>Edit the selected component label, value, timing parameters, and other technical properties.</td></tr>
+<tr><td>Log / DRC dock</td><td>Displays design-rule warnings, simulation warnings, and diagnostic messages.</td></tr>
+<tr><td>Oscilloscope dock</td><td>Displays live two-channel waveforms with Time/Div and per-channel Volt/Div controls.</td></tr>
+<tr><td>Status bar</td><td>Shows mouse world coordinates, simulation messages, and short operation feedback.</td></tr>
+</table>
+
+<h2>3. File Menu</h2>
+<table>
+<tr><th>Command</th><th>Shortcut</th><th>Description</th></tr>
+<tr><td>New</td><td>Ctrl+N</td><td>Create a blank project and choose the canvas dimensions.</td></tr>
+<tr><td>Open</td><td>Ctrl+O</td><td>Load a saved <code>.pcj</code> project file.</td></tr>
+<tr><td>Save</td><td>Ctrl+S</td><td>Save the current project. If it has no path, Save As is opened.</td></tr>
+<tr><td>Save As</td><td>-</td><td>Save the project to a selected path. Existing unrelated files require overwrite confirmation.</td></tr>
+<tr><td>Export Image</td><td>-</td><td>Export the canvas as a PNG image.</td></tr>
+<tr><td>Recent Projects</td><td>-</td><td>Open one of the last saved or opened projects.</td></tr>
+</table>
+
+
+<h2>4. Appearance and Theme</h2>
+<ul>
+  <li>Open <b>View &gt; Theme</b> to choose <b>System (Automatic)</b>, <b>Light</b>, or <b>Dark</b>.</li>
+  <li><b>System (Automatic)</b> follows the operating-system color scheme. On supported Qt versions, the application updates when the OS theme changes.</li>
+  <li>Your selected theme mode is saved and restored the next time the application starts.</li>
+</ul>
+
+<h2>5. Canvas Navigation</h2>
+<ul>
+  <li><b>Zoom:</b> use the mouse wheel.</li>
+  <li><b>Pan:</b> drag with the supported pan mouse button, depending on your build configuration.</li>
+  <li><b>Coordinates:</b> the status bar shows live world coordinates.</li>
+  <li><b>Snap:</b> components and routing points snap to the design grid to keep the schematic aligned.</li>
+</ul>
+<div class="note">The grid is a visual alignment aid. Circuit connectivity is determined by pins, wires, and junctions, not by merely drawing objects near each other.</div>
+
+<h2>6. Component Library</h2>
+<p>The library is organized into categories such as sources, passive parts, interactive components, digital parts, advanced components, and measurement tools.</p>
+<ul>
+  <li>Use the search field to filter by component name or category.</li>
+  <li>Select a component to preview its symbol.</li>
+  <li>Click on the canvas to place a new instance.</li>
+  <li>Placed components become part of the current project and can be selected, edited, moved, wired, saved, and simulated.</li>
+</ul>
+
+<h2>7. Selecting and Editing Components</h2>
+<table>
+<tr><th>Action</th><th>How to use it</th></tr>
+<tr><td>Select</td><td>Click a component. The selected component is highlighted and shown in the Properties dock.</td></tr>
+<tr><td>Move</td><td>Drag the selected component. Connected wires are rerouted where supported.</td></tr>
+<tr><td>Rotate</td><td>Select the component and press <code>R</code>. Rotation updates pin positions.</td></tr>
+<tr><td>Mirror horizontally</td><td>Select the component and press <code>H</code>.</td></tr>
+<tr><td>Mirror vertically</td><td>Select the component and press <code>V</code>.</td></tr>
+<tr><td>Delete</td><td>Select a component or wire and press <code>Delete</code>.</td></tr>
+<tr><td>Properties</td><td>Click a component or double-click it to focus the Properties dock. Edit values and labels there.</td></tr>
+</table>
+
+<h2>8. Common Component Values</h2>
+<p>The Properties dock accepts practical engineering values for supported components.</p>
+<table>
+<tr><th>Component</th><th>Examples</th></tr>
+<tr><td>Resistor</td><td><code>1000</code>, <code>1k</code>, <code>4.7k</code></td></tr>
+<tr><td>Capacitor</td><td><code>100 nF</code>, <code>0.1 uF</code>, <code>1e-6 F</code>, <code>470 pF</code></td></tr>
+<tr><td>Inductor</td><td><code>10 mH</code>, <code>0.01 H</code></td></tr>
+<tr><td>DC source / Battery</td><td><code>5</code>, <code>9</code>, <code>12V</code></td></tr>
+<tr><td>Logic gate delay</td><td>Propagation delay in seconds or milliseconds, depending on the property label.</td></tr>
+</table>
+<div class="ok">If an invalid value is typed, the component should keep the last valid value instead of silently becoming zero.</div>
+
+<h2>9. Wiring</h2>
+<ul>
+  <li>Press <code>W</code> or use the Wire toolbar button to enter wire mode.</li>
+  <li>Move the mouse near a pin; the pin should highlight when it can be used.</li>
+  <li>Click a source pin to start routing.</li>
+  <li>Click empty grid points to add 90-degree bend points.</li>
+  <li>Click a destination pin to finish the wire.</li>
+</ul>
+<h3>90-degree routing</h3>
+<p>Wires should be composed of horizontal and vertical line segments. Diagonal wires are not used for schematic routing.</p>
+<h3>Crossings and junctions</h3>
+<ul>
+  <li>If two wires simply cross, they are not electrically connected.</li>
+  <li>Create a dot junction at a crossing point when you want an electrical connection.</li>
+  <li>Junctions are represented visually by small filled dots and logically by shared net nodes.</li>
+</ul>
+
+<h2>10. Simulation Controls</h2>
+<table>
+<tr><th>Command</th><th>Shortcut</th><th>Meaning</th></tr>
+<tr><td>Run</td><td>F5</td><td>Advance simulation continuously.</td></tr>
+<tr><td>Pause</td><td>F6</td><td>Freeze simulation time while preserving current state.</td></tr>
+<tr><td>Stop</td><td>F7</td><td>Reset simulation time, clear pending events, and return to edit state.</td></tr>
+<tr><td>Step</td><td>F8</td><td>Advance simulation by one step while staying paused.</td></tr>
+<tr><td>Run DRC</td><td>-</td><td>Run design-rule checks such as floating pins and simple short-circuit warnings.</td></tr>
+</table>
+
+<h2>11. Logic Simulation</h2>
+<p>Digital logic uses ideal voltage levels:</p>
+<ul>
+  <li><b>LOW:</b> 0V</li>
+  <li><b>HIGH:</b> 5V</li>
+  <li><b>Undefined:</b> floating input, invalid voltage range, conflicting drivers, or undetermined signal.</li>
+</ul>
+<p>Undefined inputs should produce a warning such as <code>Floating input detected.</code> and propagate undefined behavior where applicable.</p>
+
+<h2>12. Analog / Hybrid Simulation</h2>
+<p>The simulator uses a simplified hybrid approach:</p>
+<ol>
+  <li>Digital components are evaluated.</li>
+  <li>Digital outputs are converted to ideal 0V/5V voltage sources where needed.</li>
+  <li>The analog network is advanced using a simplified nodal/matrix model.</li>
+  <li>Measurement tools and visual components are updated from the solved node voltages.</li>
+</ol>
+<div class="note">This is an educational simulation model. It is not a full SPICE replacement, but it is designed to support common OOP project demonstrations such as DC sources, resistors, capacitors, inductors, logic gates, ADC/DAC, and measurement tools.</div>
+
+<h2>13. Interactive Components</h2>
+<table>
+<tr><th>Component</th><th>Interaction</th></tr>
+<tr><td>Switch</td><td>Toggle between open and closed. Electrically, a closed switch merges A and B into one ideal net; an open switch leaves the two sides completely disconnected. No artificial high/low resistance is used.</td></tr>
+<tr><td>PushButton</td><td>A one-pin momentary digital source. Hold the left mouse button on the component to drive OUT HIGH (5V); release it to drive OUT LOW (0V). Use Ctrl+drag to reposition the button.</td></tr>
+<tr><td>Potentiometer</td><td>Edit resistance and wiper through Properties. Wiper accepts the full 0.0..1.0 range: 0.0 makes W an exact contact with A, and 1.0 makes W an exact contact with B.</td></tr>
+<tr><td>Keypad</td><td>Used as a matrix input device for MCU-style tests.</td></tr>
+</table>
+
+<h2>14. Measurement Tools</h2>
+<h3>Voltage Probe</h3>
+<p>Use a probe to inspect the instantaneous voltage of a pin, wire, or node during Run or Pause.</p>
+<h3>Voltmeter</h3>
+<p>A two-terminal voltmeter displays the voltage difference between its terminals. If no valid ground/reference exists, it may show <b>ERR</b>.</p>
+<h3>Ammeter</h3>
+<p>An ammeter estimates current through the measured branch. For ideal digital inputs, current is expected to be approximately zero.</p>
+<h3>Oscilloscope</h3>
+<ul>
+  <li>Supports at least two independent channels.</li>
+  <li>Each channel has its own color, Volt/Div, and vertical offset.</li>
+  <li>Time/Div controls the shared horizontal time base.</li>
+  <li>Waveforms are drawn from left to right as simulation time advances.</li>
+  <li>In Pause, the displayed trace is held.</li>
+  <li>In Stop, the oscilloscope buffer is cleared/reset.</li>
+</ul>
+
+<h2>15. ADC and DAC</h2>
+<div class="note"><b>Pin labels:</b> multi-I/O symbols show their pin names directly on the schematic. ADC uses VIN, VREF+, VREF- and D0..D(N-1). DAC uses D0..D(N-1), VREF+, VREF- and VOUT. MCU symbols expose four 8-bit GPIO ports P0.0..P3.7 plus VCC and GND. Seven-segment displays visibly label A, B, C, D, E, F, G, DP and COM.</div>
+<h3>ADC</h3>
+<ul>
+  <li>Inputs: analog input, Vref+, Vref-.</li>
+  <li>Outputs: N independent digital output bits.</li>
+  <li>Out-of-range analog input saturates to 0 or 2^N - 1.</li>
+  <li>Conversion delay keeps the last valid output until the delay has elapsed; no external CLK pin is required.</li>
+</ul>
+<h3>DAC</h3>
+<ul>
+  <li>Inputs: N digital input bits, Vref+, Vref-.</li>
+  <li>Output: analog voltage mapped linearly from the digital code.</li>
+  <li>Conversion delay keeps the last valid analog output until the delay has elapsed.</li>
+</ul>
+
+<h2>16. Microcontroller, Firmware, LCD, Keypad, and External Memory</h2>
+<ul>
+  <li>The firmware loader reads validated Intel HEX-style files.</li>
+  <li>The microcontroller model includes program counter, accumulator, internal RAM/Flash state, and a simplified instruction decoder.</li>
+  <li>The MCU exposes four independent 8-bit ports: P0, P1, P2, and P3. Every GPIO bit can be configured as input (high impedance) or output.</li>
+  <li>SETB and CLR make the addressed bit an output automatically. Full-port input/output and direction instructions are also supported.</li>
+  <li>The LCD 16x2 component displays text and receives simplified RS/RW/E/D0..D7 bus commands.</li>
+  <li>The 4x4 keypad is clickable directly on the schematic. Hold the mouse on a key to close that row/column contact and release the mouse to open it. Use Ctrl+drag to move the keypad.</li>
+  <li>The external memory supports true bus reads and writes. RD and WR are active-low; during RD the memory drives D0..D7, and during WR it samples D0..D7. RD and WR must not be active at the same time.</li>
+</ul>
+<h3>Educational MCU bytecode additions</h3>
+<table>
+<tr><th>Opcode</th><th>Operands</th><th>Operation</th></tr>
+<tr><td>0x42</td><td>port</td><td>MOV Pn,A — write ACC to a whole port and make all 8 bits outputs.</td></tr>
+<tr><td>0x43</td><td>port</td><td>MOV A,Pn — read the current pin levels of a port into ACC.</td></tr>
+<tr><td>0x44</td><td>port, mask</td><td>DIR Pn,#mask — bit 1 means output; bit 0 means input/high-impedance.</td></tr>
+<tr><td>0x45</td><td>port, imm</td><td>MOV Pn,#imm — write an immediate byte and make all 8 bits outputs.</td></tr>
+</table>
+
+<h2>17. Wire Colors During Simulation</h2>
+<table>
+<tr><th>State</th><th>Typical color</th></tr>
+<tr><td>HIGH / 5V</td><td>Red</td></tr>
+<tr><td>LOW / 0V</td><td>Blue</td></tr>
+<tr><td>Floating / Undefined</td><td>Gray or yellow, depending on the current visual theme/build.</td></tr>
+<tr><td>Stopped / editing</td><td>Default wire color.</td></tr>
+</table>
+
+<h2>18. Recommended Test Circuits</h2>
+<ol>
+  <li><b>Voltage divider:</b> DC source + two resistors + ground + voltmeter.</li>
+  <li><b>RC transient:</b> DC source + switch + resistor + capacitor + oscilloscope.</li>
+  <li><b>Logic gate:</b> Clock or sources driving AND/OR/NOT gates and LED outputs.</li>
+  <li><b>D Flip-Flop:</b> D source + clock source + Q output probe or oscilloscope.</li>
+  <li><b>ADC/DAC loop:</b> analog voltage to ADC, digital bus to DAC, measure DAC output.</li>
+  <li><b>Junction/crossing:</b> verify that crossed wires are not connected unless a junction dot exists.</li>
+</ol>
+
+<h2>19. Blocking DRC and Safe Simulation Stop</h2>
+<p>Before Run, and again before each analog matrix solve, the simulator validates blocking electrical faults:</p>
+<ul>
+  <li><b>Conflicting drivers / short circuit:</b> if one net is driven to incompatible ideal voltage values, Run is blocked or stopped before MNA is evaluated.</li>
+  <li><b>Floating required input:</b> wiring inputs together is not enough; an input net must have a real path to a valid source or reference.</li>
+  <li><b>Solver failure:</b> if the circuit matrix still cannot be solved safely, simulation stops and the Log / DRC panel reports the failure.</li>
+  <li><b>Successful validation:</b> the Log / DRC panel also reports when blocking checks pass and simulation starts.</li>
+</ul>
+<p>An open Switch is a true disconnection. Its isolated side remains FLOATING; it is never converted into a fake 0V by a large resistance or numerical regularization.</p>
+
+<h2>20. Troubleshooting</h2>
+<table>
+<tr><th>Problem</th><th>Likely cause and fix</th></tr>
+<tr><td>The EXE does not open outside Qt Creator</td><td>Deploy Qt runtime files. Use <code>deploy_windows_mingw.bat</code> after a successful build, or run through Qt Creator.</td></tr>
+<tr><td>No suitable Qt kit found</td><td>Install Qt 6 MinGW 64-bit, CMake, Ninja, and MinGW through Qt Maintenance Tool. Then reopen the project.</td></tr>
+<tr><td>Component value becomes zero</td><td>Check unit formatting. Use supported forms such as <code>100 nF</code>, <code>1k</code>, or <code>5V</code>.</td></tr>
+<tr><td>Wire does not connect</td><td>Make sure the wire starts and ends on highlighted pins, not just near component drawings.</td></tr>
+<tr><td>Crossed wires act disconnected</td><td>This is correct unless a junction dot is placed at the crossing.</td></tr>
+<tr><td>Oscilloscope line is flat</td><td>Verify that the channel pins are connected to valid nets and that simulation is running.</td></tr>
+<tr><td>Unexpected logic warning</td><td>Check for floating inputs, no ground reference, or multiple conflicting drivers.</td></tr>
+<tr><td>Run stops immediately</td><td>Blocking DRC is intentional: a required input with no real electrical source/reference, or a net driven to conflicting ideal values, prevents or stops Run before the analog matrix is solved. Correct the wiring and run again.</td></tr>
+<tr><td>Analog solve failed</td><td>The simulator stops safely instead of continuing with invalid matrix results. Check ideal-source conflicts, direct source shorts, and missing electrical references.</td></tr>
+<tr><td>Seven-segment stays dark</td><td>This is a common-cathode model. Wire COM to the low/reference side and drive A..G above COM. DP is optional.</td></tr>
+</table>
+
+<h2>21. Keyboard Reference</h2>
+<table>
+<tr><th>Shortcut</th><th>Action</th></tr>
+<tr><td>Ctrl+N</td><td>New project</td></tr>
+<tr><td>Ctrl+O</td><td>Open project</td></tr>
+<tr><td>Ctrl+S</td><td>Save project</td></tr>
+<tr><td>Ctrl+Z</td><td>Undo</td></tr>
+<tr><td>Ctrl+Y</td><td>Redo</td></tr>
+<tr><td>F1</td><td>Open this help guide</td></tr>
+<tr><td>F5</td><td>Run simulation</td></tr>
+<tr><td>F6</td><td>Pause simulation</td></tr>
+<tr><td>F7</td><td>Stop simulation</td></tr>
+<tr><td>F8</td><td>Step simulation</td></tr>
+<tr><td>W</td><td>Wire mode</td></tr>
+<tr><td>R</td><td>Rotate selected component</td></tr>
+<tr><td>H</td><td>Mirror selected component horizontally</td></tr>
+<tr><td>V</td><td>Mirror selected component vertically</td></tr>
+<tr><td>Delete</td><td>Delete selected object</td></tr>
+</table>
+
+<h2>22. Notes for Students and Demonstration</h2>
+<ul>
+  <li>Use simple test circuits first, then move to mixed analog/digital examples.</li>
+  <li>Always place at least one GND before expecting analog voltage tools to behave correctly.</li>
+  <li>Use the DRC log before running complex circuits.</li>
+  <li>For presentation, prepare at least one circuit each for analog, digital, oscilloscope, ADC/DAC, and wire/junction behavior.</li>
+</ul>
+</body>
+</html>
