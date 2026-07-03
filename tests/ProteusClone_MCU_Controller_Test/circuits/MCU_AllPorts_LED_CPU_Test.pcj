@@ -1,0 +1,2654 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1200,
+    "height": 820
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "DCVoltageSource",
+      "label": "VCC5",
+      "x": 160,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 2,
+      "type": "Ground",
+      "label": "GND_SRC",
+      "x": 160,
+      "y": 220,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 3,
+      "type": "Microcontroller",
+      "label": "MCU_TEST",
+      "x": 520,
+      "y": 380,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "firmwarePath": "firmware/mcu_basic_all_ports.hex",
+      "pc": 0,
+      "acc": 0,
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "p3": 0,
+      "pin0": 0,
+      "pin1": 0,
+      "pin2": 0,
+      "pin3": 0,
+      "dir0": 255,
+      "dir1": 255,
+      "dir2": 255,
+      "dir3": 255,
+      "flash": [
+        68,
+        0,
+        255,
+        68,
+        1,
+        255,
+        68,
+        2,
+        255,
+        68,
+        3,
+        255,
+        16,
+        18,
+        32,
+        48,
+        17,
+        32,
+        69,
+        0,
+        85,
+        69,
+        1,
+        170,
+        69,
+        2,
+        15,
+        18,
+        32,
+        66,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        0,
+        170,
+        69,
+        1,
+        85,
+        69,
+        2,
+        240,
+        69,
+        3,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        0,
+        0,
+        64,
+        0,
+        64,
+        3,
+        64,
+        7,
+        69,
+        1,
+        255,
+        65,
+        18,
+        65,
+        21,
+        69,
+        2,
+        51,
+        69,
+        3,
+        204,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        1,
+        69,
+        3,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        2,
+        69,
+        3,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        4,
+        69,
+        3,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        8,
+        69,
+        3,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        16,
+        69,
+        3,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        32,
+        69,
+        3,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        64,
+        69,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        69,
+        2,
+        128,
+        69,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48,
+        18,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Ground",
+      "label": "GND_P0",
+      "x": 330,
+      "y": 365,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 5,
+      "type": "Ground",
+      "label": "GND_P1",
+      "x": 330,
+      "y": 650,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 6,
+      "type": "Ground",
+      "label": "GND_P2",
+      "x": 920,
+      "y": 365,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 7,
+      "type": "Ground",
+      "label": "GND_P3",
+      "x": 920,
+      "y": 650,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 8,
+      "type": "LED",
+      "label": "P0.0",
+      "x": 230,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 9,
+      "type": "LED",
+      "label": "P0.1",
+      "x": 230,
+      "y": 148,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 10,
+      "type": "LED",
+      "label": "P0.2",
+      "x": 230,
+      "y": 176,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 11,
+      "type": "LED",
+      "label": "P0.3",
+      "x": 230,
+      "y": 204,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 12,
+      "type": "LED",
+      "label": "P0.4",
+      "x": 230,
+      "y": 232,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 13,
+      "type": "LED",
+      "label": "P0.5",
+      "x": 230,
+      "y": 260,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 14,
+      "type": "LED",
+      "label": "P0.6",
+      "x": 230,
+      "y": 288,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 15,
+      "type": "LED",
+      "label": "P0.7",
+      "x": 230,
+      "y": 316,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 80
+    },
+    {
+      "id": 16,
+      "type": "LED",
+      "label": "P1.0",
+      "x": 230,
+      "y": 410,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 17,
+      "type": "LED",
+      "label": "P1.1",
+      "x": 230,
+      "y": 438,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 18,
+      "type": "LED",
+      "label": "P1.2",
+      "x": 230,
+      "y": 466,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 19,
+      "type": "LED",
+      "label": "P1.3",
+      "x": 230,
+      "y": 494,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 20,
+      "type": "LED",
+      "label": "P1.4",
+      "x": 230,
+      "y": 522,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 21,
+      "type": "LED",
+      "label": "P1.5",
+      "x": 230,
+      "y": 550,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 22,
+      "type": "LED",
+      "label": "P1.6",
+      "x": 230,
+      "y": 578,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 23,
+      "type": "LED",
+      "label": "P1.7",
+      "x": 230,
+      "y": 606,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 200,
+      "color_b": 255
+    },
+    {
+      "id": 24,
+      "type": "LED",
+      "label": "P2.0",
+      "x": 810,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 25,
+      "type": "LED",
+      "label": "P2.1",
+      "x": 810,
+      "y": 148,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 26,
+      "type": "LED",
+      "label": "P2.2",
+      "x": 810,
+      "y": 176,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 27,
+      "type": "LED",
+      "label": "P2.3",
+      "x": 810,
+      "y": 204,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 28,
+      "type": "LED",
+      "label": "P2.4",
+      "x": 810,
+      "y": 232,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 29,
+      "type": "LED",
+      "label": "P2.5",
+      "x": 810,
+      "y": 260,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 30,
+      "type": "LED",
+      "label": "P2.6",
+      "x": 810,
+      "y": 288,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 31,
+      "type": "LED",
+      "label": "P2.7",
+      "x": 810,
+      "y": 316,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 80,
+      "color_g": 255,
+      "color_b": 120
+    },
+    {
+      "id": 32,
+      "type": "LED",
+      "label": "P3.0",
+      "x": 810,
+      "y": 410,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 33,
+      "type": "LED",
+      "label": "P3.1",
+      "x": 810,
+      "y": 438,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 34,
+      "type": "LED",
+      "label": "P3.2",
+      "x": 810,
+      "y": 466,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 35,
+      "type": "LED",
+      "label": "P3.3",
+      "x": 810,
+      "y": 494,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 36,
+      "type": "LED",
+      "label": "P3.4",
+      "x": 810,
+      "y": 522,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 37,
+      "type": "LED",
+      "label": "P3.5",
+      "x": 810,
+      "y": 550,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 38,
+      "type": "LED",
+      "label": "P3.6",
+      "x": 810,
+      "y": 578,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    },
+    {
+      "id": 39,
+      "type": "LED",
+      "label": "P3.7",
+      "x": 810,
+      "y": 606,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 190,
+      "color_b": 60
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 160.0,
+          "y": 90.0
+        },
+        {
+          "x": 502.0,
+          "y": 90.0
+        },
+        {
+          "x": 502.0,
+          "y": 276.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "VCC"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 160.0,
+          "y": 150.0
+        },
+        {
+          "x": 160.0,
+          "y": 200.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "NEG",
+      "endCompId": 2,
+      "endPinName": "GND"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 538.0,
+          "y": 484.0
+        },
+        {
+          "x": 538.0,
+          "y": 520.0
+        },
+        {
+          "x": 160.0,
+          "y": 520.0
+        },
+        {
+          "x": 160.0,
+          "y": 200.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "GND",
+      "endCompId": 2,
+      "endPinName": "GND"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 304.0
+        },
+        {
+          "x": 360.0,
+          "y": 304.0
+        },
+        {
+          "x": 360.0,
+          "y": 120.0
+        },
+        {
+          "x": 205.0,
+          "y": 120.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.0",
+      "endCompId": 8,
+      "endPinName": "A"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 120.0
+        },
+        {
+          "x": 330.0,
+          "y": 120.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 8,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 312.0
+        },
+        {
+          "x": 360.0,
+          "y": 312.0
+        },
+        {
+          "x": 360.0,
+          "y": 148.0
+        },
+        {
+          "x": 205.0,
+          "y": 148.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.1",
+      "endCompId": 9,
+      "endPinName": "A"
+    },
+    {
+      "id": 7,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 148.0
+        },
+        {
+          "x": 330.0,
+          "y": 148.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 9,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 8,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 320.0
+        },
+        {
+          "x": 360.0,
+          "y": 320.0
+        },
+        {
+          "x": 360.0,
+          "y": 176.0
+        },
+        {
+          "x": 205.0,
+          "y": 176.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.2",
+      "endCompId": 10,
+      "endPinName": "A"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 176.0
+        },
+        {
+          "x": 330.0,
+          "y": 176.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 10,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 10,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 328.0
+        },
+        {
+          "x": 360.0,
+          "y": 328.0
+        },
+        {
+          "x": 360.0,
+          "y": 204.0
+        },
+        {
+          "x": 205.0,
+          "y": 204.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.3",
+      "endCompId": 11,
+      "endPinName": "A"
+    },
+    {
+      "id": 11,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 204.0
+        },
+        {
+          "x": 330.0,
+          "y": 204.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 11,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 12,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 336.0
+        },
+        {
+          "x": 360.0,
+          "y": 336.0
+        },
+        {
+          "x": 360.0,
+          "y": 232.0
+        },
+        {
+          "x": 205.0,
+          "y": 232.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.4",
+      "endCompId": 12,
+      "endPinName": "A"
+    },
+    {
+      "id": 13,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 232.0
+        },
+        {
+          "x": 330.0,
+          "y": 232.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 12,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 14,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 344.0
+        },
+        {
+          "x": 360.0,
+          "y": 344.0
+        },
+        {
+          "x": 360.0,
+          "y": 260.0
+        },
+        {
+          "x": 205.0,
+          "y": 260.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.5",
+      "endCompId": 13,
+      "endPinName": "A"
+    },
+    {
+      "id": 15,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 260.0
+        },
+        {
+          "x": 330.0,
+          "y": 260.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 13,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 16,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 352.0
+        },
+        {
+          "x": 360.0,
+          "y": 352.0
+        },
+        {
+          "x": 360.0,
+          "y": 288.0
+        },
+        {
+          "x": 205.0,
+          "y": 288.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.6",
+      "endCompId": 14,
+      "endPinName": "A"
+    },
+    {
+      "id": 17,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 288.0
+        },
+        {
+          "x": 330.0,
+          "y": 288.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 14,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 18,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 360.0
+        },
+        {
+          "x": 360.0,
+          "y": 360.0
+        },
+        {
+          "x": 360.0,
+          "y": 316.0
+        },
+        {
+          "x": 205.0,
+          "y": 316.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.7",
+      "endCompId": 15,
+      "endPinName": "A"
+    },
+    {
+      "id": 19,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 316.0
+        },
+        {
+          "x": 330.0,
+          "y": 316.0
+        },
+        {
+          "x": 330.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 15,
+      "startPinName": "K",
+      "endCompId": 4,
+      "endPinName": "GND"
+    },
+    {
+      "id": 20,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 400.0
+        },
+        {
+          "x": 360.0,
+          "y": 400.0
+        },
+        {
+          "x": 360.0,
+          "y": 410.0
+        },
+        {
+          "x": 205.0,
+          "y": 410.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.0",
+      "endCompId": 16,
+      "endPinName": "A"
+    },
+    {
+      "id": 21,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 410.0
+        },
+        {
+          "x": 330.0,
+          "y": 410.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 16,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 22,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 408.0
+        },
+        {
+          "x": 360.0,
+          "y": 408.0
+        },
+        {
+          "x": 360.0,
+          "y": 438.0
+        },
+        {
+          "x": 205.0,
+          "y": 438.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.1",
+      "endCompId": 17,
+      "endPinName": "A"
+    },
+    {
+      "id": 23,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 438.0
+        },
+        {
+          "x": 330.0,
+          "y": 438.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 17,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 24,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 416.0
+        },
+        {
+          "x": 360.0,
+          "y": 416.0
+        },
+        {
+          "x": 360.0,
+          "y": 466.0
+        },
+        {
+          "x": 205.0,
+          "y": 466.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.2",
+      "endCompId": 18,
+      "endPinName": "A"
+    },
+    {
+      "id": 25,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 466.0
+        },
+        {
+          "x": 330.0,
+          "y": 466.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 18,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 26,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 424.0
+        },
+        {
+          "x": 360.0,
+          "y": 424.0
+        },
+        {
+          "x": 360.0,
+          "y": 494.0
+        },
+        {
+          "x": 205.0,
+          "y": 494.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.3",
+      "endCompId": 19,
+      "endPinName": "A"
+    },
+    {
+      "id": 27,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 494.0
+        },
+        {
+          "x": 330.0,
+          "y": 494.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 19,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 28,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 432.0
+        },
+        {
+          "x": 360.0,
+          "y": 432.0
+        },
+        {
+          "x": 360.0,
+          "y": 522.0
+        },
+        {
+          "x": 205.0,
+          "y": 522.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.4",
+      "endCompId": 20,
+      "endPinName": "A"
+    },
+    {
+      "id": 29,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 522.0
+        },
+        {
+          "x": 330.0,
+          "y": 522.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 20,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 30,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 440.0
+        },
+        {
+          "x": 360.0,
+          "y": 440.0
+        },
+        {
+          "x": 360.0,
+          "y": 550.0
+        },
+        {
+          "x": 205.0,
+          "y": 550.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.5",
+      "endCompId": 21,
+      "endPinName": "A"
+    },
+    {
+      "id": 31,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 550.0
+        },
+        {
+          "x": 330.0,
+          "y": 550.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 21,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 32,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 448.0
+        },
+        {
+          "x": 360.0,
+          "y": 448.0
+        },
+        {
+          "x": 360.0,
+          "y": 578.0
+        },
+        {
+          "x": 205.0,
+          "y": 578.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.6",
+      "endCompId": 22,
+      "endPinName": "A"
+    },
+    {
+      "id": 33,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 578.0
+        },
+        {
+          "x": 330.0,
+          "y": 578.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 22,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 34,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 456.0
+        },
+        {
+          "x": 360.0,
+          "y": 456.0
+        },
+        {
+          "x": 360.0,
+          "y": 606.0
+        },
+        {
+          "x": 205.0,
+          "y": 606.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.7",
+      "endCompId": 23,
+      "endPinName": "A"
+    },
+    {
+      "id": 35,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 606.0
+        },
+        {
+          "x": 330.0,
+          "y": 606.0
+        },
+        {
+          "x": 330.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 23,
+      "startPinName": "K",
+      "endCompId": 5,
+      "endPinName": "GND"
+    },
+    {
+      "id": 36,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 304.0
+        },
+        {
+          "x": 700.0,
+          "y": 304.0
+        },
+        {
+          "x": 700.0,
+          "y": 120.0
+        },
+        {
+          "x": 785.0,
+          "y": 120.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.0",
+      "endCompId": 24,
+      "endPinName": "A"
+    },
+    {
+      "id": 37,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 120.0
+        },
+        {
+          "x": 920.0,
+          "y": 120.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 24,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 38,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 312.0
+        },
+        {
+          "x": 700.0,
+          "y": 312.0
+        },
+        {
+          "x": 700.0,
+          "y": 148.0
+        },
+        {
+          "x": 785.0,
+          "y": 148.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.1",
+      "endCompId": 25,
+      "endPinName": "A"
+    },
+    {
+      "id": 39,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 148.0
+        },
+        {
+          "x": 920.0,
+          "y": 148.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 25,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 40,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 320.0
+        },
+        {
+          "x": 700.0,
+          "y": 320.0
+        },
+        {
+          "x": 700.0,
+          "y": 176.0
+        },
+        {
+          "x": 785.0,
+          "y": 176.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.2",
+      "endCompId": 26,
+      "endPinName": "A"
+    },
+    {
+      "id": 41,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 176.0
+        },
+        {
+          "x": 920.0,
+          "y": 176.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 26,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 42,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 328.0
+        },
+        {
+          "x": 700.0,
+          "y": 328.0
+        },
+        {
+          "x": 700.0,
+          "y": 204.0
+        },
+        {
+          "x": 785.0,
+          "y": 204.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.3",
+      "endCompId": 27,
+      "endPinName": "A"
+    },
+    {
+      "id": 43,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 204.0
+        },
+        {
+          "x": 920.0,
+          "y": 204.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 27,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 44,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 336.0
+        },
+        {
+          "x": 700.0,
+          "y": 336.0
+        },
+        {
+          "x": 700.0,
+          "y": 232.0
+        },
+        {
+          "x": 785.0,
+          "y": 232.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.4",
+      "endCompId": 28,
+      "endPinName": "A"
+    },
+    {
+      "id": 45,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 232.0
+        },
+        {
+          "x": 920.0,
+          "y": 232.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 28,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 46,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 344.0
+        },
+        {
+          "x": 700.0,
+          "y": 344.0
+        },
+        {
+          "x": 700.0,
+          "y": 260.0
+        },
+        {
+          "x": 785.0,
+          "y": 260.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.5",
+      "endCompId": 29,
+      "endPinName": "A"
+    },
+    {
+      "id": 47,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 260.0
+        },
+        {
+          "x": 920.0,
+          "y": 260.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 29,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 48,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 352.0
+        },
+        {
+          "x": 700.0,
+          "y": 352.0
+        },
+        {
+          "x": 700.0,
+          "y": 288.0
+        },
+        {
+          "x": 785.0,
+          "y": 288.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.6",
+      "endCompId": 30,
+      "endPinName": "A"
+    },
+    {
+      "id": 49,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 288.0
+        },
+        {
+          "x": 920.0,
+          "y": 288.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 30,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 50,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 360.0
+        },
+        {
+          "x": 700.0,
+          "y": 360.0
+        },
+        {
+          "x": 700.0,
+          "y": 316.0
+        },
+        {
+          "x": 785.0,
+          "y": 316.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P2.7",
+      "endCompId": 31,
+      "endPinName": "A"
+    },
+    {
+      "id": 51,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 316.0
+        },
+        {
+          "x": 920.0,
+          "y": 316.0
+        },
+        {
+          "x": 920.0,
+          "y": 345.0
+        }
+      ],
+      "startCompId": 31,
+      "startPinName": "K",
+      "endCompId": 6,
+      "endPinName": "GND"
+    },
+    {
+      "id": 52,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 400.0
+        },
+        {
+          "x": 700.0,
+          "y": 400.0
+        },
+        {
+          "x": 700.0,
+          "y": 410.0
+        },
+        {
+          "x": 785.0,
+          "y": 410.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.0",
+      "endCompId": 32,
+      "endPinName": "A"
+    },
+    {
+      "id": 53,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 410.0
+        },
+        {
+          "x": 920.0,
+          "y": 410.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 32,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 54,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 408.0
+        },
+        {
+          "x": 700.0,
+          "y": 408.0
+        },
+        {
+          "x": 700.0,
+          "y": 438.0
+        },
+        {
+          "x": 785.0,
+          "y": 438.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.1",
+      "endCompId": 33,
+      "endPinName": "A"
+    },
+    {
+      "id": 55,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 438.0
+        },
+        {
+          "x": 920.0,
+          "y": 438.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 33,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 56,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 416.0
+        },
+        {
+          "x": 700.0,
+          "y": 416.0
+        },
+        {
+          "x": 700.0,
+          "y": 466.0
+        },
+        {
+          "x": 785.0,
+          "y": 466.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.2",
+      "endCompId": 34,
+      "endPinName": "A"
+    },
+    {
+      "id": 57,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 466.0
+        },
+        {
+          "x": 920.0,
+          "y": 466.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 34,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 58,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 424.0
+        },
+        {
+          "x": 700.0,
+          "y": 424.0
+        },
+        {
+          "x": 700.0,
+          "y": 494.0
+        },
+        {
+          "x": 785.0,
+          "y": 494.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.3",
+      "endCompId": 35,
+      "endPinName": "A"
+    },
+    {
+      "id": 59,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 494.0
+        },
+        {
+          "x": 920.0,
+          "y": 494.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 35,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 60,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 432.0
+        },
+        {
+          "x": 700.0,
+          "y": 432.0
+        },
+        {
+          "x": 700.0,
+          "y": 522.0
+        },
+        {
+          "x": 785.0,
+          "y": 522.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.4",
+      "endCompId": 36,
+      "endPinName": "A"
+    },
+    {
+      "id": 61,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 522.0
+        },
+        {
+          "x": 920.0,
+          "y": 522.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 36,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 62,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 440.0
+        },
+        {
+          "x": 700.0,
+          "y": 440.0
+        },
+        {
+          "x": 700.0,
+          "y": 550.0
+        },
+        {
+          "x": 785.0,
+          "y": 550.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.5",
+      "endCompId": 37,
+      "endPinName": "A"
+    },
+    {
+      "id": 63,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 550.0
+        },
+        {
+          "x": 920.0,
+          "y": 550.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 37,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 64,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 448.0
+        },
+        {
+          "x": 700.0,
+          "y": 448.0
+        },
+        {
+          "x": 700.0,
+          "y": 578.0
+        },
+        {
+          "x": 785.0,
+          "y": 578.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.6",
+      "endCompId": 38,
+      "endPinName": "A"
+    },
+    {
+      "id": 65,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 578.0
+        },
+        {
+          "x": 920.0,
+          "y": 578.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 38,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    },
+    {
+      "id": 66,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 588.0,
+          "y": 456.0
+        },
+        {
+          "x": 700.0,
+          "y": 456.0
+        },
+        {
+          "x": 700.0,
+          "y": 606.0
+        },
+        {
+          "x": 785.0,
+          "y": 606.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P3.7",
+      "endCompId": 39,
+      "endPinName": "A"
+    },
+    {
+      "id": 67,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 835.0,
+          "y": 606.0
+        },
+        {
+          "x": 920.0,
+          "y": 606.0
+        },
+        {
+          "x": 920.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 39,
+      "startPinName": "K",
+      "endCompId": 7,
+      "endPinName": "GND"
+    }
+  ],
+  "junctions": []
+}
