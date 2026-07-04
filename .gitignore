@@ -1,0 +1,46 @@
+# Build output
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+.ninja_*
+
+# Qt Creator / IDE
+*.user
+*.creator.user
+*.pro.user
+.vscode/
+.idea/
+.vs/
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.o
+*.obj
+*.pdb
+*.ilk
+*.app/
+
+# Generated deploy folders
+release/
+debug/
+deploy/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
