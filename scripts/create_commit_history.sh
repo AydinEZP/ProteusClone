@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 set -euo pipefail
 
 # Run this script from the repository root after putting the final project files in place.
@@ -136,3 +136,4 @@ fi
 echo "History is ready. To publish:"
 echo "  git push -u origin main"
 echo "  git push origin v1.0-final"
+

@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
     Write-Host "Git was not found in PATH." -ForegroundColor Red
@@ -157,3 +157,4 @@ Write-Host "History is ready." -ForegroundColor Green
 Write-Host "Run these commands to publish:" -ForegroundColor Yellow
 Write-Host "  git push -u origin main"
 Write-Host "  git push origin v1.0-final"
+

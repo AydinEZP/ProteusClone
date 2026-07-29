@@ -1,6 +1,6 @@
-# Team Partition
+﻿# Team Partition
 
-## Part 1 — UI / Editor / Project Management
+## Part 1 â€” UI / Editor / Project Management
 
 **Owner:** Aydin
 
@@ -25,7 +25,7 @@ Relevant files:
 - `src/commands/`
 - `src/main.cpp`
 
-## Part 2 — Circuit Core / Simulation
+## Part 2 â€” Circuit Core / Simulation
 
 **Owner:** Mohsen
 
@@ -59,7 +59,7 @@ Relevant files:
 - `src/domain/components/Voltmeter.*`
 - `src/domain/components/Ammeter.*`
 
-## Part 3 — Advanced Components
+## Part 3 â€” Advanced Components
 
 **Owner:** Sepehr
 

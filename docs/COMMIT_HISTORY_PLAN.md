@@ -1,4 +1,4 @@
-# Commit History Plan
+﻿# Commit History Plan
 
 This is the planned Git history for importing the local project checkpoints into GitHub.
 
@@ -20,7 +20,7 @@ This is the planned Git history for importing the local project checkpoints into
 | 14 | 2026-06-30 | Mohsen | Simulation | Add DRC blocking faults and floating input checks |
 | 15 | 2026-07-01 | Aydin | UI / Editor | Add theme system and built-in help menu |
 | 16 | 2026-07-03 | Sepehr | Advanced | Add final test circuits and firmware files |
-| 17 | 2026-07-04 | Aydin, Sepehr, Mohsen | Final | Final cleanup and documentation |
+| 17 | 2026-07-04 | Aydin, Mohsen, Sepehr | Final | Final cleanup and documentation |
 
 ## Author Mapping
 
@@ -30,5 +30,4 @@ This is the planned Git history for importing the local project checkpoints into
 | Mohsen | Circuit Core / Simulation |
 | Sepehr | Advanced Components |
 
-The helper script [`scripts/create_commit_history.sh`](../scripts/create_commit_history.sh) follows this plan.
-
+The helper scripts in `scripts/` follow this plan.

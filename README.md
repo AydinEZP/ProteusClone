@@ -1,4 +1,4 @@
-# ProteusClone
+﻿# ProteusClone
 
 ProteusClone is a Proteus-like desktop circuit simulator written in C++/Qt for an Object-Oriented Programming course project.
 
@@ -74,5 +74,3 @@ Recommended final checks:
 - [`docs/USER_GUIDE.md`](docs/USER_GUIDE.md)
 - [`docs/DEVELOPER_NOTES.md`](docs/DEVELOPER_NOTES.md)
 - [`AI_USAGE.md`](AI_USAGE.md)
-
-
