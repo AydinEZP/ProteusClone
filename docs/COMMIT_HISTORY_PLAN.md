@@ -31,3 +31,4 @@ This is the planned Git history for importing the local project checkpoints into
 | Sepehr | Advanced Components |
 
 The helper script [`scripts/create_commit_history.sh`](../scripts/create_commit_history.sh) follows this plan.
+
