@@ -1,13 +1,11 @@
 # ProteusClone RAM / ADC / DAC Test Pack
 
-> Legacy documentation path: the complete files described below are now available under `../RAM_ADC_DAC_Tests/`. This README is retained so existing references are not broken.
-
-Open each canonical `.pcj` from `File > Open Project`, then press `Run`.
+Open each `.pcj` from `File > Open Project`, then press `Run`.
 
 ## 01_ram_write_read_mcu_external_memory.pcj
 Tests MCU + ExternalMemory RAM write/read.
 
-Firmware: `../RAM_ADC_DAC_Tests/firmware/ram_write_read_a5.hex`
+Firmware: `firmware/ram_write_read_a5.hex`
 
 Expected behavior:
 - MCU writes `0xA5` to external RAM address `0x10`.
@@ -34,7 +32,7 @@ Expected behavior:
 ## 03_dac_mcu_p3_ramp_scope.pcj
 Tests DAC input pins driven by MCU digital output.
 
-Firmware: `../RAM_ADC_DAC_Tests/firmware/dac_ramp_p3.hex`
+Firmware: `firmware/dac_ramp_p3.hex`
 
 Expected behavior:
 - MCU cycles P3 through `0x00`, `0x55`, `0xAA`, `0xFF`.

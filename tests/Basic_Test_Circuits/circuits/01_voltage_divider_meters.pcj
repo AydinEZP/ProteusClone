@@ -1,0 +1,301 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1800,
+    "height": 1100
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "DCVoltageSource",
+      "label": "V1 5V",
+      "x": 100,
+      "y": 200,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 2,
+      "type": "Ground",
+      "label": "GND",
+      "x": 460,
+      "y": 230,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 3,
+      "type": "Resistor",
+      "label": "R1 1k",
+      "x": 220,
+      "y": 170,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 1000.0
+    },
+    {
+      "id": 4,
+      "type": "Resistor",
+      "label": "R2 1k",
+      "x": 340,
+      "y": 170,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 1000.0
+    },
+    {
+      "id": 5,
+      "type": "Voltmeter",
+      "label": "VM_mid",
+      "x": 350,
+      "y": 260,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 6,
+      "type": "Oscilloscope",
+      "label": "Scope_divider",
+      "x": 570,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "ch1VoltsPerDiv": 1.0,
+      "ch2VoltsPerDiv": 2.0,
+      "timePerDiv": 0.1,
+      "ch1VerticalOffset": 0.0,
+      "ch2VerticalOffset": 0.0,
+      "ch1Enabled": true,
+      "ch2Enabled": true,
+      "maxSamples": 1000
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 170.0
+        },
+        {
+          "x": 190.0,
+          "y": 170.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "A"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 250.0,
+          "y": 170.0
+        },
+        {
+          "x": 310.0,
+          "y": 170.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "A"
+    },
+    {
+      "id": 3,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 370.0,
+          "y": 170.0
+        },
+        {
+          "x": 430.0,
+          "y": 170.0
+        },
+        {
+          "x": 430.0,
+          "y": 210.0
+        },
+        {
+          "x": 460.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "B",
+      "endCompId": 2,
+      "endPinName": "GND"
+    },
+    {
+      "id": 4,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 230.0
+        },
+        {
+          "x": 100.0,
+          "y": 260.0
+        },
+        {
+          "x": 430.0,
+          "y": 260.0
+        },
+        {
+          "x": 460.0,
+          "y": 260.0
+        },
+        {
+          "x": 460.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "NEG",
+      "endCompId": 2,
+      "endPinName": "GND"
+    },
+    {
+      "id": 5,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 250.0,
+          "y": 170.0
+        },
+        {
+          "x": 280.0,
+          "y": 170.0
+        },
+        {
+          "x": 280.0,
+          "y": 260.0
+        },
+        {
+          "x": 320.0,
+          "y": 260.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 5,
+      "endPinName": "POS"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 380.0,
+          "y": 260.0
+        },
+        {
+          "x": 460.0,
+          "y": 260.0
+        },
+        {
+          "x": 460.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "NEG",
+      "endCompId": 2,
+      "endPinName": "GND"
+    },
+    {
+      "id": 7,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 250.0,
+          "y": 170.0
+        },
+        {
+          "x": 300.0,
+          "y": 170.0
+        },
+        {
+          "x": 300.0,
+          "y": 120.0
+        },
+        {
+          "x": 515.0,
+          "y": 120.0
+        },
+        {
+          "x": 515.0,
+          "y": 168.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 6,
+      "endPinName": "CH1"
+    },
+    {
+      "id": 8,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 170.0
+        },
+        {
+          "x": 100.0,
+          "y": 120.0
+        },
+        {
+          "x": 515.0,
+          "y": 120.0
+        },
+        {
+          "x": 515.0,
+          "y": 192.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "POS",
+      "endCompId": 6,
+      "endPinName": "CH2"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 515.0,
+          "y": 212.0
+        },
+        {
+          "x": 460.0,
+          "y": 212.0
+        },
+        {
+          "x": 460.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "GND",
+      "endCompId": 2,
+      "endPinName": "GND"
+    }
+  ],
+  "junctions": []
+}

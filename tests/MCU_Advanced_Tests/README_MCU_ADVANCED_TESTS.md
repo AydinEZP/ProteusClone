@@ -1,12 +1,10 @@
 # MCU Advanced Test Pack
 
-> Legacy documentation path: the complete files described below are now available under `../MCU_Advanced_Tests/`. This README is retained so existing references are not broken.
-
 This pack is built for the current ProteusClone educational MCU model.
-Each canonical `.pcj` embeds the firmware bytes so the circuit can run even if the HEX path is not resolved. Matching Intel HEX files are included separately for testing the firmware loader.
+Each `.pcj` embeds the firmware bytes, so the circuit can run even if the HEX path is not resolved. The matching Intel HEX file is also included separately for testing the firmware loader.
 
 ## 1) 01_mcu_lcd_advanced.pcj
-Firmware: `../MCU_Advanced_Tests/firmware/mcu_lcd_advanced.hex`
+Firmware: `firmware/mcu_lcd_advanced.hex`
 
 Expected behavior:
 - LCD is cleared and then displays: `ADVANCED OK`
@@ -15,7 +13,7 @@ Expected behavior:
 - ACC should become 8 during the initial CPU smoke test.
 
 ## 2) 02_mcu_adc_dac_scope.pcj
-Firmware: `../MCU_Advanced_Tests/firmware/mcu_adc_dac_loop.hex`
+Firmware: `firmware/mcu_adc_dac_loop.hex`
 
 Signal path:
 `MCU P0[7:0] -> DAC8 -> analog VOUT -> ADC8 -> Seven Segment raw segment pins`
@@ -29,7 +27,7 @@ Expected behavior:
 - ADC D0..D7 directly drive A,B,C,D,E,F,G,DP of the seven-segment. This is a raw bit visualization, not a BCD digit decoder.
 
 ## 3) 03_mcu_external_ram_write.pcj
-Firmware: `../MCU_Advanced_Tests/firmware/mcu_external_ram_write.hex`
+Firmware: `firmware/mcu_external_ram_write.hex`
 
 Bus mapping:
 - MCU P0[7:0] -> RAM D0..D7
@@ -46,7 +44,7 @@ The firmware repeatedly writes:
 After running, save the project and inspect the serialized `ram` array if you want to verify the written cells numerically.
 
 ## 4) 04_mcu_keypad_scan.pcj
-Firmware: `../MCU_Advanced_Tests/firmware/mcu_keypad_scan.hex`
+Firmware: `firmware/mcu_keypad_scan.hex`
 
 Expected behavior:
 - MCU P1.4..P1.7 scans keypad rows R1..R4, one LOW row at a time.

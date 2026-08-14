@@ -1,0 +1,1026 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 2100,
+    "height": 1250
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 1080,
+      "y": 760,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "VCC5",
+      "x": 130,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "Potentiometer",
+      "label": "ADC_INPUT_POT",
+      "x": 360,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0,
+      "wiper": 0.5
+    },
+    {
+      "id": 4,
+      "type": "SimpleADC",
+      "label": "ADC8",
+      "x": 650,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "inputVoltage": 0.0,
+      "vrefMinus": 0.0,
+      "vrefPlus": 5.0,
+      "bits": 8,
+      "conversionDelayMs": 1.0,
+      "outputCode": 0
+    },
+    {
+      "id": 5,
+      "type": "Microcontroller",
+      "label": "MCU_ADC_READER",
+      "x": 980,
+      "y": 330,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "firmwarePath": "firmware/adc_mirror.hex",
+      "pc": 0,
+      "acc": 0,
+      "p0": 0,
+      "pin0": 0,
+      "dir0": 0,
+      "p1": 0,
+      "pin1": 0,
+      "dir1": 255,
+      "p2": 0,
+      "pin2": 0,
+      "dir2": 0,
+      "p3": 0,
+      "pin3": 0,
+      "dir3": 0,
+      "flash": [
+        68,
+        0,
+        0,
+        67,
+        0,
+        66,
+        1,
+        48,
+        3,
+        0
+      ]
+    },
+    {
+      "id": 10,
+      "type": "LED",
+      "label": "BIT0",
+      "x": 1450,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 40,
+      "color_b": 20
+    },
+    {
+      "id": 11,
+      "type": "LED",
+      "label": "BIT1",
+      "x": 1450,
+      "y": 260,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 60,
+      "color_b": 20
+    },
+    {
+      "id": 12,
+      "type": "LED",
+      "label": "BIT2",
+      "x": 1450,
+      "y": 340,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 80,
+      "color_b": 20
+    },
+    {
+      "id": 13,
+      "type": "LED",
+      "label": "BIT3",
+      "x": 1450,
+      "y": 420,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 100,
+      "color_b": 20
+    },
+    {
+      "id": 14,
+      "type": "LED",
+      "label": "BIT4",
+      "x": 1450,
+      "y": 500,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 120,
+      "color_b": 20
+    },
+    {
+      "id": 15,
+      "type": "LED",
+      "label": "BIT5",
+      "x": 1450,
+      "y": 580,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 140,
+      "color_b": 20
+    },
+    {
+      "id": 16,
+      "type": "LED",
+      "label": "BIT6",
+      "x": 1450,
+      "y": 660,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 160,
+      "color_b": 20
+    },
+    {
+      "id": 17,
+      "type": "LED",
+      "label": "BIT7",
+      "x": 1450,
+      "y": 740,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 180,
+      "color_b": 20
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 130.0,
+          "y": 150.0
+        },
+        {
+          "x": 250.0,
+          "y": 150.0
+        },
+        {
+          "x": 250.0,
+          "y": 300.0
+        },
+        {
+          "x": 328.0,
+          "y": 300.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "A"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 392.0,
+          "y": 300.0
+        },
+        {
+          "x": 600.0,
+          "y": 300.0
+        },
+        {
+          "x": 600.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 360.0,
+          "y": 272.0
+        },
+        {
+          "x": 500.0,
+          "y": 272.0
+        },
+        {
+          "x": 500.0,
+          "y": 280.0
+        },
+        {
+          "x": 578.0,
+          "y": 280.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "W",
+      "endCompId": 4,
+      "endPinName": "VIN"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 130.0,
+          "y": 150.0
+        },
+        {
+          "x": 500.0,
+          "y": 150.0
+        },
+        {
+          "x": 500.0,
+          "y": 300.0
+        },
+        {
+          "x": 578.0,
+          "y": 300.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 4,
+      "endPinName": "VREF+"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1080.0,
+          "y": 740.0
+        },
+        {
+          "x": 700.0,
+          "y": 740.0
+        },
+        {
+          "x": 700.0,
+          "y": 320.0
+        },
+        {
+          "x": 578.0,
+          "y": 320.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "GND",
+      "endCompId": 4,
+      "endPinName": "VREF-"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 130.0,
+          "y": 150.0
+        },
+        {
+          "x": 850.0,
+          "y": 150.0
+        },
+        {
+          "x": 850.0,
+          "y": 226.0
+        },
+        {
+          "x": 962.0,
+          "y": 226.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 5,
+      "endPinName": "VCC"
+    },
+    {
+      "id": 7,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 998.0,
+          "y": 434.0
+        },
+        {
+          "x": 1050.0,
+          "y": 434.0
+        },
+        {
+          "x": 1050.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "GND",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 8,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 130.0,
+          "y": 210.0
+        },
+        {
+          "x": 1000.0,
+          "y": 210.0
+        },
+        {
+          "x": 1000.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 258.0
+        },
+        {
+          "x": 820.0,
+          "y": 258.0
+        },
+        {
+          "x": 820.0,
+          "y": 254.0
+        },
+        {
+          "x": 912.0,
+          "y": 254.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D0",
+      "endCompId": 5,
+      "endPinName": "P0.0"
+    },
+    {
+      "id": 10,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 270.0
+        },
+        {
+          "x": 820.0,
+          "y": 270.0
+        },
+        {
+          "x": 820.0,
+          "y": 262.0
+        },
+        {
+          "x": 912.0,
+          "y": 262.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D1",
+      "endCompId": 5,
+      "endPinName": "P0.1"
+    },
+    {
+      "id": 11,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 282.0
+        },
+        {
+          "x": 820.0,
+          "y": 282.0
+        },
+        {
+          "x": 820.0,
+          "y": 270.0
+        },
+        {
+          "x": 912.0,
+          "y": 270.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D2",
+      "endCompId": 5,
+      "endPinName": "P0.2"
+    },
+    {
+      "id": 12,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 294.0
+        },
+        {
+          "x": 820.0,
+          "y": 294.0
+        },
+        {
+          "x": 820.0,
+          "y": 278.0
+        },
+        {
+          "x": 912.0,
+          "y": 278.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D3",
+      "endCompId": 5,
+      "endPinName": "P0.3"
+    },
+    {
+      "id": 13,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 306.0
+        },
+        {
+          "x": 820.0,
+          "y": 306.0
+        },
+        {
+          "x": 820.0,
+          "y": 286.0
+        },
+        {
+          "x": 912.0,
+          "y": 286.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D4",
+      "endCompId": 5,
+      "endPinName": "P0.4"
+    },
+    {
+      "id": 14,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 318.0
+        },
+        {
+          "x": 820.0,
+          "y": 318.0
+        },
+        {
+          "x": 820.0,
+          "y": 294.0
+        },
+        {
+          "x": 912.0,
+          "y": 294.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D5",
+      "endCompId": 5,
+      "endPinName": "P0.5"
+    },
+    {
+      "id": 15,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 330.0
+        },
+        {
+          "x": 820.0,
+          "y": 330.0
+        },
+        {
+          "x": 820.0,
+          "y": 302.0
+        },
+        {
+          "x": 912.0,
+          "y": 302.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D6",
+      "endCompId": 5,
+      "endPinName": "P0.6"
+    },
+    {
+      "id": 16,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 722.0,
+          "y": 342.0
+        },
+        {
+          "x": 820.0,
+          "y": 342.0
+        },
+        {
+          "x": 820.0,
+          "y": 310.0
+        },
+        {
+          "x": 912.0,
+          "y": 310.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "D7",
+      "endCompId": 5,
+      "endPinName": "P0.7"
+    },
+    {
+      "id": 17,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 350.0
+        },
+        {
+          "x": 1250.0,
+          "y": 350.0
+        },
+        {
+          "x": 1250.0,
+          "y": 180.0
+        },
+        {
+          "x": 1425.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.0",
+      "endCompId": 10,
+      "endPinName": "A"
+    },
+    {
+      "id": 18,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 180.0
+        },
+        {
+          "x": 1560.0,
+          "y": 180.0
+        },
+        {
+          "x": 1560.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 10,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 19,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 358.0
+        },
+        {
+          "x": 1255.0,
+          "y": 358.0
+        },
+        {
+          "x": 1255.0,
+          "y": 260.0
+        },
+        {
+          "x": 1425.0,
+          "y": 260.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.1",
+      "endCompId": 11,
+      "endPinName": "A"
+    },
+    {
+      "id": 20,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 260.0
+        },
+        {
+          "x": 1565.0,
+          "y": 260.0
+        },
+        {
+          "x": 1565.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 11,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 21,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 366.0
+        },
+        {
+          "x": 1260.0,
+          "y": 366.0
+        },
+        {
+          "x": 1260.0,
+          "y": 340.0
+        },
+        {
+          "x": 1425.0,
+          "y": 340.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.2",
+      "endCompId": 12,
+      "endPinName": "A"
+    },
+    {
+      "id": 22,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 340.0
+        },
+        {
+          "x": 1570.0,
+          "y": 340.0
+        },
+        {
+          "x": 1570.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 12,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 23,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 374.0
+        },
+        {
+          "x": 1265.0,
+          "y": 374.0
+        },
+        {
+          "x": 1265.0,
+          "y": 420.0
+        },
+        {
+          "x": 1425.0,
+          "y": 420.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.3",
+      "endCompId": 13,
+      "endPinName": "A"
+    },
+    {
+      "id": 24,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 420.0
+        },
+        {
+          "x": 1575.0,
+          "y": 420.0
+        },
+        {
+          "x": 1575.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 13,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 25,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 382.0
+        },
+        {
+          "x": 1270.0,
+          "y": 382.0
+        },
+        {
+          "x": 1270.0,
+          "y": 500.0
+        },
+        {
+          "x": 1425.0,
+          "y": 500.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.4",
+      "endCompId": 14,
+      "endPinName": "A"
+    },
+    {
+      "id": 26,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 500.0
+        },
+        {
+          "x": 1580.0,
+          "y": 500.0
+        },
+        {
+          "x": 1580.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 14,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 27,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 390.0
+        },
+        {
+          "x": 1275.0,
+          "y": 390.0
+        },
+        {
+          "x": 1275.0,
+          "y": 580.0
+        },
+        {
+          "x": 1425.0,
+          "y": 580.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.5",
+      "endCompId": 15,
+      "endPinName": "A"
+    },
+    {
+      "id": 28,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 580.0
+        },
+        {
+          "x": 1585.0,
+          "y": 580.0
+        },
+        {
+          "x": 1585.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 15,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 29,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 398.0
+        },
+        {
+          "x": 1280.0,
+          "y": 398.0
+        },
+        {
+          "x": 1280.0,
+          "y": 660.0
+        },
+        {
+          "x": 1425.0,
+          "y": 660.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.6",
+      "endCompId": 16,
+      "endPinName": "A"
+    },
+    {
+      "id": 30,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 660.0
+        },
+        {
+          "x": 1590.0,
+          "y": 660.0
+        },
+        {
+          "x": 1590.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 16,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 31,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 912.0,
+          "y": 406.0
+        },
+        {
+          "x": 1285.0,
+          "y": 406.0
+        },
+        {
+          "x": 1285.0,
+          "y": 740.0
+        },
+        {
+          "x": 1425.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "P1.7",
+      "endCompId": 17,
+      "endPinName": "A"
+    },
+    {
+      "id": 32,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 1475.0,
+          "y": 740.0
+        },
+        {
+          "x": 1080.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 17,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    }
+  ],
+  "junctions": []
+}

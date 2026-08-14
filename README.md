@@ -53,7 +53,9 @@ On Windows, build with Qt Creator or CMake, then run `ProteusClone.exe`. If dire
 
 ## Test Files
 
-Sample `.pcj` circuits and `.hex` firmware files are available under `tests/`.
+The canonical manual test suite under `tests/` contains 22 JSON-based `.pcj` circuits and 12 Intel HEX firmware files. It covers basic analog/digital circuits, wiring and junctions, measurement tools, oscilloscope behavior, RAM, ADC, DAC, MCU GPIO, LCD and Keypad scenarios. Earlier `ProteusClone_*` fixture copies are retained for compatibility and are identified in `tests/README_TESTS.md`.
+
+The complete inventory and usage notes are available in [`tests/README_TESTS.md`](tests/README_TESTS.md).
 
 Recommended final checks:
 

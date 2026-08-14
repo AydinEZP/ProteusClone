@@ -1,9 +1,7 @@
 # MCU + RAM / ADC / DAC test pack
 
-> Legacy documentation path: the complete files described below are now available under `../MCU_RAM_ADC_DAC_Tests/`. This README is retained so existing references are not broken.
-
-These files target the current 4-port MCU model and the current `.pcj` JSON format.
-Each canonical circuit embeds the firmware bytes in the MCU component so loading the `.pcj` is enough, with matching Intel HEX files included as well.
+These files are built for the current 4-port MCU model and the current `.pcj` JSON format.
+Each circuit embeds the firmware bytes in the MCU component, so loading the `.pcj` is enough. The matching Intel HEX files are included as well.
 
 ## 1) 01_MCU_RAM_Write_Read.pcj
 Purpose: verify **external RAM write and read through the MCU**.

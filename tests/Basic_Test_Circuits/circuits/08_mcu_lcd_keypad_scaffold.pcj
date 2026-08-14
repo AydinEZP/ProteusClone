@@ -1,0 +1,701 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1800,
+    "height": 1100
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 770,
+      "y": 420,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "VCC 5V",
+      "x": 90,
+      "y": 160,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "Microcontroller",
+      "label": "MCU1",
+      "x": 310,
+      "y": 240,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "pc": 0,
+      "flashBytes": 0
+    },
+    {
+      "id": 4,
+      "type": "LCD16x2",
+      "label": "LCD1",
+      "x": 600,
+      "y": 150,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 5,
+      "type": "Keypad",
+      "label": "KEYPAD1",
+      "x": 600,
+      "y": 330,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 6,
+      "type": "ExternalMemory",
+      "label": "RAM1",
+      "x": 820,
+      "y": 250,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 90.0,
+          "y": 130.0
+        },
+        {
+          "x": 90.0,
+          "y": 80.0
+        },
+        {
+          "x": 290.0,
+          "y": 80.0
+        },
+        {
+          "x": 290.0,
+          "y": 190.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "VCC"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 330.0,
+          "y": 290.0
+        },
+        {
+          "x": 770.0,
+          "y": 290.0
+        },
+        {
+          "x": 770.0,
+          "y": 400.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "GND",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 3,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 90.0,
+          "y": 130.0
+        },
+        {
+          "x": 90.0,
+          "y": 70.0
+        },
+        {
+          "x": 570.0,
+          "y": 70.0
+        },
+        {
+          "x": 570.0,
+          "y": 120.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 4,
+      "endPinName": "VCC"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 582.0,
+          "y": 120.0
+        },
+        {
+          "x": 770.0,
+          "y": 120.0
+        },
+        {
+          "x": 770.0,
+          "y": 400.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "GND",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 90.0,
+          "y": 190.0
+        },
+        {
+          "x": 770.0,
+          "y": 190.0
+        },
+        {
+          "x": 770.0,
+          "y": 400.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 6,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 205.0
+        },
+        {
+          "x": 400.0,
+          "y": 205.0
+        },
+        {
+          "x": 540.0,
+          "y": 205.0
+        },
+        {
+          "x": 540.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.0",
+      "endCompId": 4,
+      "endPinName": "D0"
+    },
+    {
+      "id": 7,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 215.0
+        },
+        {
+          "x": 400.0,
+          "y": 215.0
+        },
+        {
+          "x": 540.0,
+          "y": 215.0
+        },
+        {
+          "x": 554.0,
+          "y": 215.0
+        },
+        {
+          "x": 554.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.1",
+      "endCompId": 4,
+      "endPinName": "D1"
+    },
+    {
+      "id": 8,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 225.0
+        },
+        {
+          "x": 400.0,
+          "y": 225.0
+        },
+        {
+          "x": 540.0,
+          "y": 225.0
+        },
+        {
+          "x": 568.0,
+          "y": 225.0
+        },
+        {
+          "x": 568.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.2",
+      "endCompId": 4,
+      "endPinName": "D2"
+    },
+    {
+      "id": 9,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 235.0
+        },
+        {
+          "x": 400.0,
+          "y": 235.0
+        },
+        {
+          "x": 540.0,
+          "y": 235.0
+        },
+        {
+          "x": 582.0,
+          "y": 235.0
+        },
+        {
+          "x": 582.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.3",
+      "endCompId": 4,
+      "endPinName": "D3"
+    },
+    {
+      "id": 10,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 245.0
+        },
+        {
+          "x": 400.0,
+          "y": 245.0
+        },
+        {
+          "x": 540.0,
+          "y": 245.0
+        },
+        {
+          "x": 596.0,
+          "y": 245.0
+        },
+        {
+          "x": 596.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.4",
+      "endCompId": 4,
+      "endPinName": "D4"
+    },
+    {
+      "id": 11,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 255.0
+        },
+        {
+          "x": 400.0,
+          "y": 255.0
+        },
+        {
+          "x": 540.0,
+          "y": 255.0
+        },
+        {
+          "x": 610.0,
+          "y": 255.0
+        },
+        {
+          "x": 610.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.5",
+      "endCompId": 4,
+      "endPinName": "D5"
+    },
+    {
+      "id": 12,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 265.0
+        },
+        {
+          "x": 400.0,
+          "y": 265.0
+        },
+        {
+          "x": 540.0,
+          "y": 265.0
+        },
+        {
+          "x": 624.0,
+          "y": 265.0
+        },
+        {
+          "x": 624.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.6",
+      "endCompId": 4,
+      "endPinName": "D6"
+    },
+    {
+      "id": 13,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 255.0,
+          "y": 275.0
+        },
+        {
+          "x": 400.0,
+          "y": 275.0
+        },
+        {
+          "x": 540.0,
+          "y": 275.0
+        },
+        {
+          "x": 638.0,
+          "y": 275.0
+        },
+        {
+          "x": 638.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P0.7",
+      "endCompId": 4,
+      "endPinName": "D7"
+    },
+    {
+      "id": 14,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 205.0
+        },
+        {
+          "x": 430.0,
+          "y": 205.0
+        },
+        {
+          "x": 520.0,
+          "y": 205.0
+        },
+        {
+          "x": 520.0,
+          "y": 270.0
+        },
+        {
+          "x": 550.0,
+          "y": 270.0
+        },
+        {
+          "x": 550.0,
+          "y": 300.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.0",
+      "endCompId": 5,
+      "endPinName": "R1"
+    },
+    {
+      "id": 15,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 245.0
+        },
+        {
+          "x": 460.0,
+          "y": 245.0
+        },
+        {
+          "x": 680.0,
+          "y": 245.0
+        },
+        {
+          "x": 680.0,
+          "y": 270.0
+        },
+        {
+          "x": 650.0,
+          "y": 270.0
+        },
+        {
+          "x": 650.0,
+          "y": 300.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.4",
+      "endCompId": 5,
+      "endPinName": "C1"
+    },
+    {
+      "id": 16,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 215.0
+        },
+        {
+          "x": 430.0,
+          "y": 215.0
+        },
+        {
+          "x": 520.0,
+          "y": 215.0
+        },
+        {
+          "x": 520.0,
+          "y": 290.0
+        },
+        {
+          "x": 550.0,
+          "y": 290.0
+        },
+        {
+          "x": 550.0,
+          "y": 320.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.1",
+      "endCompId": 5,
+      "endPinName": "R2"
+    },
+    {
+      "id": 17,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 255.0
+        },
+        {
+          "x": 460.0,
+          "y": 255.0
+        },
+        {
+          "x": 680.0,
+          "y": 255.0
+        },
+        {
+          "x": 680.0,
+          "y": 290.0
+        },
+        {
+          "x": 650.0,
+          "y": 290.0
+        },
+        {
+          "x": 650.0,
+          "y": 320.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.5",
+      "endCompId": 5,
+      "endPinName": "C2"
+    },
+    {
+      "id": 18,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 225.0
+        },
+        {
+          "x": 430.0,
+          "y": 225.0
+        },
+        {
+          "x": 520.0,
+          "y": 225.0
+        },
+        {
+          "x": 520.0,
+          "y": 310.0
+        },
+        {
+          "x": 550.0,
+          "y": 310.0
+        },
+        {
+          "x": 550.0,
+          "y": 340.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.2",
+      "endCompId": 5,
+      "endPinName": "R3"
+    },
+    {
+      "id": 19,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 265.0
+        },
+        {
+          "x": 460.0,
+          "y": 265.0
+        },
+        {
+          "x": 680.0,
+          "y": 265.0
+        },
+        {
+          "x": 680.0,
+          "y": 310.0
+        },
+        {
+          "x": 650.0,
+          "y": 310.0
+        },
+        {
+          "x": 650.0,
+          "y": 340.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.6",
+      "endCompId": 5,
+      "endPinName": "C3"
+    },
+    {
+      "id": 20,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 235.0
+        },
+        {
+          "x": 430.0,
+          "y": 235.0
+        },
+        {
+          "x": 520.0,
+          "y": 235.0
+        },
+        {
+          "x": 520.0,
+          "y": 330.0
+        },
+        {
+          "x": 550.0,
+          "y": 330.0
+        },
+        {
+          "x": 550.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.3",
+      "endCompId": 5,
+      "endPinName": "R4"
+    },
+    {
+      "id": 21,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 365.0,
+          "y": 275.0
+        },
+        {
+          "x": 460.0,
+          "y": 275.0
+        },
+        {
+          "x": 680.0,
+          "y": 275.0
+        },
+        {
+          "x": 680.0,
+          "y": 330.0
+        },
+        {
+          "x": 650.0,
+          "y": 330.0
+        },
+        {
+          "x": 650.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.7",
+      "endCompId": 5,
+      "endPinName": "C4"
+    }
+  ],
+  "junctions": []
+}

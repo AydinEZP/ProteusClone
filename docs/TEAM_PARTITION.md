@@ -48,7 +48,7 @@ Scope:
 
 Relevant files:
 
-- `src/domain/`
+- `src/domain/` base/core files and non-advanced components
 - `src/graph/`
 - `src/simulation/`
 - `src/domain/components/Oscilloscope.*`
@@ -87,4 +87,6 @@ Relevant files:
 - `src/domain/components/LCD16x2.*`
 - `src/domain/components/Keypad.*`
 - `src/domain/components/SevenSegment.*`
-- `tests/`
+- Advanced-component `.pcj` and `.hex` assets under `tests/`
+
+The advanced component files listed above are owned by Part 3 even though they are physically stored below `src/domain/components/`.

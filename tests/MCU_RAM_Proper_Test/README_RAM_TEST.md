@@ -1,8 +1,7 @@
 # MCU + External RAM proper write/read test
 
-This legacy directory retains `MCU_RAM_Write_Read_4Pattern_Test.pcj`. Use the canonical copy at `../MCU_RAM_Proper_Test/circuits/MCU_RAM_Write_Read_4Pattern_Test.pcj`; its matching firmware is available at `../MCU_RAM_Proper_Test/firmware/ram_full_write_read.hex`.
-
-The MCU program is embedded in the PCJ, so the circuit runs even if the external HEX path is not resolved.
+Open `circuits/MCU_RAM_Write_Read_4Pattern_Test.pcj` and press Run.
+The MCU program is embedded in the PCJ, so the circuit runs even if the external HEX path is not resolved. The matching HEX file is included for manual firmware loading.
 
 ## Wiring
 - P0.0..P0.7 <-> RAM D0..D7 (bidirectional data bus)
