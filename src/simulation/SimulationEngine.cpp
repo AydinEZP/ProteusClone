@@ -146,6 +146,8 @@ void SimulationEngine::stop()
     m_time = 0.0;
     m_pinVoltages.clear();
     m_referencedNodes.clear();
+    m_keypadEchoLastKey.clear();
+    m_keypadEchoText.clear();
     for (auto& comp : m_graph->components()) {
         if (auto* osc = dynamic_cast<Oscilloscope*>(comp.get()))
             osc->clearSamples();
@@ -1146,6 +1148,55 @@ void SimulationEngine::updateAnalogConsumers()
     sampleMicrocontrollerInputs();
 }
 
+
+void SimulationEngine::updateKeypadLcdEchoDemo()
+{
+    if (!m_graph) return;
+
+    LCD16x2* echoLcd = nullptr;
+    for (auto& comp : m_graph->components()) {
+        if (!comp) continue;
+        auto* lcd = dynamic_cast<LCD16x2*>(comp.get());
+        if (!lcd) continue;
+        const QString label = lcd->label().toUpper();
+        if (label.contains("LCD_ECHO") || label.contains("KEYPAD_LCD")) {
+            echoLcd = lcd;
+            break;
+        }
+    }
+    if (!echoLcd) return;
+
+    for (auto& comp : m_graph->components()) {
+        if (!comp) continue;
+        auto* keypad = dynamic_cast<Keypad*>(comp.get());
+        if (!keypad) continue;
+
+        const QString label = keypad->label().toUpper();
+        if (!label.contains("KEYPAD_ECHO") && !label.contains("KEYPAD_LCD"))
+            continue;
+
+        const ComponentID kid = keypad->id();
+        const QString key = keypad->pressedKey().trimmed().toUpper();
+        if (key.isEmpty() || key == "NONE") {
+            m_keypadEchoLastKey[kid].clear();
+            continue;
+        }
+
+        if (m_keypadEchoLastKey[kid] == key)
+            continue;
+        m_keypadEchoLastKey[kid] = key;
+
+        QString& text = m_keypadEchoText[echoLcd->id()];
+        if (text.size() >= 32)
+            text.clear();
+        text += key.left(1);
+
+        const QString title = QStringLiteral("KEYPAD INPUT").leftJustified(16, QLatin1Char(' '), true);
+        const QString recent = text.right(16).leftJustified(16, QLatin1Char(' '), true);
+        echoLcd->setText(title, recent);
+    }
+}
+
 // ── Main tick ────────────────────────────────────────────────────────────────
 
 void SimulationEngine::tick()
@@ -1186,6 +1237,7 @@ void SimulationEngine::tick()
     }
 
     updateAnalogConsumers();
+    updateKeypadLcdEchoDemo();
     m_time += m_dt;
 
     auto drc = m_graph->runDRC();

@@ -59,6 +59,7 @@ private:
     void sampleMicrocontrollerInputs();
     bool solveAnalogStep(QStringList& warnings);
     void updateAnalogConsumers();
+    void updateKeypadLcdEchoDemo();
     void rebuildReferencedNodes();
     QStringList detectBlockingFaults() const;
 
@@ -83,4 +84,8 @@ private:
 
     // Estimated ammeter current A->B after the last solve.
     std::unordered_map<ComponentID, double> m_ammeterCurrent;
+
+    // Presentation demo state: one-shot Keypad -> LCD echo while a key is held.
+    std::unordered_map<ComponentID, QString> m_keypadEchoLastKey;
+    std::unordered_map<ComponentID, QString> m_keypadEchoText;
 };
