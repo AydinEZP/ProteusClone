@@ -1,1 +1,0 @@
-Cycles MCU P3 through 0x00, 0x55, 0xAA, 0xFF for DAC/scope dynamic testing.

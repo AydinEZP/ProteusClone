@@ -1,6 +1,6 @@
-﻿# Team Partition
+# Team Partition
 
-## Part 1 â€” UI / Editor / Project Management
+## Part 1 — UI / Editor / Project Management
 
 **Owner:** Aydin
 
@@ -25,7 +25,7 @@ Relevant files:
 - `src/commands/`
 - `src/main.cpp`
 
-## Part 2 â€” Circuit Core / Simulation
+## Part 2 — Circuit Core / Simulation
 
 **Owner:** Mohsen
 
@@ -48,7 +48,7 @@ Scope:
 
 Relevant files:
 
-- `src/domain/` base/core files and non-advanced components
+- `src/domain/`
 - `src/graph/`
 - `src/simulation/`
 - `src/domain/components/Oscilloscope.*`
@@ -59,7 +59,7 @@ Relevant files:
 - `src/domain/components/Voltmeter.*`
 - `src/domain/components/Ammeter.*`
 
-## Part 3 â€” Advanced Components
+## Part 3 — Advanced Components
 
 **Owner:** Sepehr
 
@@ -87,6 +87,4 @@ Relevant files:
 - `src/domain/components/LCD16x2.*`
 - `src/domain/components/Keypad.*`
 - `src/domain/components/SevenSegment.*`
-- Advanced-component `.pcj` and `.hex` assets under `tests/`
-
-The advanced component files listed above are owned by Part 3 even though they are physically stored below `src/domain/components/`.
+- `tests/`

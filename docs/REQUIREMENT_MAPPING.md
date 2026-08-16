@@ -16,4 +16,4 @@
 | Oscilloscope | 2 channels, per-channel volt/div, time/div, memory, pause/stop behavior and close/reopen dock behavior |
 | Save/Load | `.pcj` project serializer |
 | UI polish | theme selection, status bar, icons and built-in English Help menu |
-| Test assets | 22 canonical manual `.pcj` circuits and 12 Intel HEX firmware files in `tests/`, covering basic, measurement, RAM, ADC/DAC and MCU/advanced scenarios |
+| Test assets | `.pcj` circuits and `.hex` firmware in `tests/` |

@@ -1,4 +1,4 @@
-﻿# ProteusClone
+# ProteusClone
 
 ProteusClone is a Proteus-like desktop circuit simulator written in C++/Qt for an Object-Oriented Programming course project.
 
@@ -53,9 +53,7 @@ On Windows, build with Qt Creator or CMake, then run `ProteusClone.exe`. If dire
 
 ## Test Files
 
-The canonical manual test suite under `tests/` contains 22 JSON-based `.pcj` circuits and 12 Intel HEX firmware files. It covers basic analog/digital circuits, wiring and junctions, measurement tools, oscilloscope behavior, RAM, ADC, DAC, MCU GPIO, LCD and Keypad scenarios. Earlier `ProteusClone_*` fixture copies are retained for compatibility and are identified in `tests/README_TESTS.md`.
-
-The complete inventory and usage notes are available in [`tests/README_TESTS.md`](tests/README_TESTS.md).
+Sample `.pcj` circuits and `.hex` firmware files are available under `tests/`.
 
 Recommended final checks:
 
@@ -71,8 +69,6 @@ Recommended final checks:
 ## Documentation
 
 - [`docs/TEAM_PARTITION.md`](docs/TEAM_PARTITION.md)
-- [`docs/COMMIT_HISTORY_PLAN.md`](docs/COMMIT_HISTORY_PLAN.md)
 - [`docs/REQUIREMENT_MAPPING.md`](docs/REQUIREMENT_MAPPING.md)
 - [`docs/USER_GUIDE.md`](docs/USER_GUIDE.md)
 - [`docs/DEVELOPER_NOTES.md`](docs/DEVELOPER_NOTES.md)
-- [`AI_USAGE.md`](AI_USAGE.md)

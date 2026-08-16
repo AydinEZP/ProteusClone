@@ -39,7 +39,3 @@ Use **View > Theme** to select System, Light or Dark mode.
 ## Save/Load
 
 Use project save/load actions to store and restore `.pcj` circuit files.
-
-## Manual Test Circuits
-
-The `tests/` directory contains ready-to-open `.pcj` circuits grouped by feature, with matching `.hex` firmware for MCU scenarios. See [`tests/README_TESTS.md`](../tests/README_TESTS.md) for the exact inventory and expected behavior. These are manual fixtures: open a circuit through **File > Open Project**, then use Run or Step and inspect the LEDs, meters, oscilloscope, DRC and log output described by that test group's README.

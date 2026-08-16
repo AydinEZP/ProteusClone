@@ -1,1 +1,0 @@
-Writes 0xA5 to external RAM address 0x10, reads it back on P1, then mirrors readback to P3. Expected P3 = 0xA5.
