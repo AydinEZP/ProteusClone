@@ -1,0 +1,234 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1800,
+    "height": 1100
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 130,
+      "y": 340,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "V1 5V",
+      "x": 100,
+      "y": 170,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "LED",
+      "label": "LED_cross_no_junction",
+      "x": 520,
+      "y": 150,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 255,
+      "color_g": 120,
+      "color_b": 0
+    },
+    {
+      "id": 4,
+      "type": "VoltageProbe",
+      "label": "Probe_cross",
+      "x": 310,
+      "y": 250,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 5,
+      "type": "Voltmeter",
+      "label": "VM_junction",
+      "x": 730,
+      "y": 170,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 6,
+      "type": "VoltageProbe",
+      "label": "Probe_joined",
+      "x": 650,
+      "y": 260,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 140.0
+        },
+        {
+          "x": 310.0,
+          "y": 140.0
+        },
+        {
+          "x": 495.0,
+          "y": 140.0
+        },
+        {
+          "x": 495.0,
+          "y": 150.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "A"
+    },
+    {
+      "id": 2,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 545.0,
+          "y": 150.0
+        },
+        {
+          "x": 580.0,
+          "y": 150.0
+        },
+        {
+          "x": 580.0,
+          "y": 320.0
+        },
+        {
+          "x": 130.0,
+          "y": 320.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "K",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 200.0
+        },
+        {
+          "x": 130.0,
+          "y": 200.0
+        },
+        {
+          "x": 130.0,
+          "y": 320.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 4,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 130.0,
+          "y": 320.0
+        },
+        {
+          "x": 310.0,
+          "y": 320.0
+        },
+        {
+          "x": 310.0,
+          "y": 140.0
+        },
+        {
+          "x": 310.0,
+          "y": 272.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "GND",
+      "endCompId": 4,
+      "endPinName": "IN"
+    },
+    {
+      "id": 5,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 140.0
+        },
+        {
+          "x": 650.0,
+          "y": 140.0
+        },
+        {
+          "x": 700.0,
+          "y": 140.0
+        },
+        {
+          "x": 700.0,
+          "y": 170.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 5,
+      "endPinName": "POS"
+    },
+    {
+      "id": 6,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 650.0,
+          "y": 282.0
+        },
+        {
+          "x": 650.0,
+          "y": 140.0
+        },
+        {
+          "x": 760.0,
+          "y": 140.0
+        },
+        {
+          "x": 760.0,
+          "y": 170.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "IN",
+      "endCompId": 5,
+      "endPinName": "NEG"
+    }
+  ],
+  "junctions": [
+    {
+      "id": 1,
+      "x": 650,
+      "y": 140
+    }
+  ]
+}

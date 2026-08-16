@@ -1,0 +1,342 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1400,
+    "height": 900
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 740,
+      "y": 760,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "SevenSegment",
+      "label": "SEVENSEG_MANUAL",
+      "x": 520,
+      "y": 360,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 3,
+      "type": "PushButton",
+      "label": "BTN_A",
+      "x": 120,
+      "y": 270,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 4,
+      "type": "PushButton",
+      "label": "BTN_B",
+      "x": 120,
+      "y": 330,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 5,
+      "type": "PushButton",
+      "label": "BTN_C",
+      "x": 120,
+      "y": 390,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 6,
+      "type": "PushButton",
+      "label": "BTN_D",
+      "x": 120,
+      "y": 450,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 7,
+      "type": "PushButton",
+      "label": "BTN_E",
+      "x": 120,
+      "y": 510,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 8,
+      "type": "PushButton",
+      "label": "BTN_F",
+      "x": 120,
+      "y": 570,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 9,
+      "type": "PushButton",
+      "label": "BTN_G",
+      "x": 120,
+      "y": 630,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 10,
+      "type": "PushButton",
+      "label": "BTN_DP",
+      "x": 120,
+      "y": 690,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 520.0,
+          "y": 414.0
+        },
+        {
+          "x": 740.0,
+          "y": 414.0
+        },
+        {
+          "x": 740.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "COM",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 270.0
+        },
+        {
+          "x": 420.0,
+          "y": 270.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "A"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 330.0
+        },
+        {
+          "x": 420.0,
+          "y": 330.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "B"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 390.0
+        },
+        {
+          "x": 420.0,
+          "y": 390.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "C"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 450.0
+        },
+        {
+          "x": 420.0,
+          "y": 450.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "D"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 510.0
+        },
+        {
+          "x": 420.0,
+          "y": 510.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 7,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "E"
+    },
+    {
+      "id": 7,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 570.0
+        },
+        {
+          "x": 420.0,
+          "y": 570.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 8,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "F"
+    },
+    {
+      "id": 8,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 630.0
+        },
+        {
+          "x": 420.0,
+          "y": 630.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 9,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "G"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 148.0,
+          "y": 690.0
+        },
+        {
+          "x": 420.0,
+          "y": 690.0
+        },
+        {
+          "x": 420.0,
+          "y": 360.0
+        },
+        {
+          "x": 472.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 10,
+      "startPinName": "OUT",
+      "endCompId": 2,
+      "endPinName": "DP"
+    }
+  ],
+  "junctions": []
+}

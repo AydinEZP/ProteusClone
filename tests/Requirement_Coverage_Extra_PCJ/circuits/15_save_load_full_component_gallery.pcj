@@ -1,0 +1,389 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1500,
+    "height": 900
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 80,
+      "y": 780,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "VCC5",
+      "x": 80,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "Battery",
+      "label": "BAT3V",
+      "x": 80,
+      "y": 240,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 3.0
+    },
+    {
+      "id": 4,
+      "type": "Resistor",
+      "label": "R_ROTATED",
+      "x": 240,
+      "y": 120,
+      "rotation": 90,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 4700.0
+    },
+    {
+      "id": 5,
+      "type": "Capacitor",
+      "label": "C_MIRROR",
+      "x": 240,
+      "y": 240,
+      "rotation": 0,
+      "mirrorH": true,
+      "mirrorV": false,
+      "capacitance": 4.7e-07,
+      "capacitance_nF": 470.0
+    },
+    {
+      "id": 6,
+      "type": "Inductor",
+      "label": "L_MIRROR",
+      "x": 240,
+      "y": 360,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": true,
+      "inductance": 0.022,
+      "inductance_mH": 22.0
+    },
+    {
+      "id": 7,
+      "type": "Switch",
+      "label": "SW_CLOSED",
+      "x": 420,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "closed": true
+    },
+    {
+      "id": 8,
+      "type": "PushButton",
+      "label": "PB_LOW_HIGH",
+      "x": 420,
+      "y": 220,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 9,
+      "type": "AndGate",
+      "label": "AND",
+      "x": 620,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "propagationDelayMs": 5.0
+    },
+    {
+      "id": 10,
+      "type": "OrGate",
+      "label": "OR",
+      "x": 620,
+      "y": 220,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "propagationDelayMs": 5.0
+    },
+    {
+      "id": 11,
+      "type": "XorGate",
+      "label": "XOR",
+      "x": 620,
+      "y": 320,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "propagationDelayMs": 5.0
+    },
+    {
+      "id": 12,
+      "type": "NandGate",
+      "label": "NAND",
+      "x": 620,
+      "y": 420,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "propagationDelayMs": 5.0
+    },
+    {
+      "id": 13,
+      "type": "NotGate",
+      "label": "NOT",
+      "x": 620,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "propagationDelayMs": 5.0
+    },
+    {
+      "id": 14,
+      "type": "DFlipFlop",
+      "label": "DFF",
+      "x": 820,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 15,
+      "type": "SimpleADC",
+      "label": "ADC",
+      "x": 820,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "bits": 8,
+      "vref": 5.0
+    },
+    {
+      "id": 16,
+      "type": "SimpleDAC",
+      "label": "DAC",
+      "x": 1020,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "bits": 8,
+      "vref": 5.0
+    },
+    {
+      "id": 17,
+      "type": "Microcontroller",
+      "label": "MCU",
+      "x": 1020,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "firmwarePath": "",
+      "pc": 0,
+      "acc": 0,
+      "p0": 0,
+      "p1": 0,
+      "p2": 0,
+      "p3": 0,
+      "pin0": 0,
+      "pin1": 0,
+      "pin2": 0,
+      "pin3": 0,
+      "dir0": 0,
+      "dir1": 0,
+      "dir2": 0,
+      "dir3": 0,
+      "flash": []
+    },
+    {
+      "id": 18,
+      "type": "ExternalMemory",
+      "label": "RAM",
+      "x": 1220,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 19,
+      "type": "LCD16x2",
+      "label": "LCD",
+      "x": 1220,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 20,
+      "type": "Keypad",
+      "label": "KEYPAD",
+      "x": 1220,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 21,
+      "type": "SevenSegment",
+      "label": "SEVENSEG",
+      "x": 1020,
+      "y": 120,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 22,
+      "type": "Oscilloscope",
+      "label": "SCOPE",
+      "x": 820,
+      "y": 660,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 23,
+      "type": "Voltmeter",
+      "label": "VM",
+      "x": 1020,
+      "y": 660,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 24,
+      "type": "Ammeter",
+      "label": "AM",
+      "x": 1220,
+      "y": 660,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 25,
+      "type": "VoltageProbe",
+      "label": "PROBE",
+      "x": 420,
+      "y": 660,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 80.0,
+          "y": 150.0
+        },
+        {
+          "x": 80.0,
+          "y": 760.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 80.0,
+          "y": 90.0
+        },
+        {
+          "x": 210.0,
+          "y": 120.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 4,
+      "endPinName": "A"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 270.0,
+          "y": 120.0
+        },
+        {
+          "x": 388.0,
+          "y": 120.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "B",
+      "endCompId": 7,
+      "endPinName": "A"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 452.0,
+          "y": 120.0
+        },
+        {
+          "x": 420.0,
+          "y": 120.0
+        },
+        {
+          "x": 420.0,
+          "y": 682.0
+        }
+      ],
+      "startCompId": 7,
+      "startPinName": "B",
+      "endCompId": 25,
+      "endPinName": "IN"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 420.0,
+          "y": 682.0
+        },
+        {
+          "x": 765.0,
+          "y": 648.0
+        }
+      ],
+      "startCompId": 25,
+      "startPinName": "IN",
+      "endCompId": 22,
+      "endPinName": "CH1"
+    }
+  ],
+  "junctions": []
+}

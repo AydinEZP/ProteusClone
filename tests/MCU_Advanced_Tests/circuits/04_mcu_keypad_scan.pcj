@@ -1,0 +1,690 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1900,
+    "height": 1100
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 1050,
+      "y": 650,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "VCC5",
+      "x": 120,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "Microcontroller",
+      "label": "MCU_SCAN",
+      "x": 340,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "firmwarePath": "firmware/mcu_keypad_scan.hex",
+      "pc": 0,
+      "acc": 0,
+      "p0": 0,
+      "p1": 0,
+      "flash": [
+        16,
+        7,
+        32,
+        1,
+        17,
+        5,
+        18,
+        5,
+        64,
+        20,
+        64,
+        21,
+        64,
+        22,
+        64,
+        23,
+        65,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        20,
+        0,
+        0,
+        0,
+        0,
+        65,
+        21,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        21,
+        0,
+        0,
+        0,
+        0,
+        65,
+        22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        22,
+        0,
+        0,
+        0,
+        0,
+        65,
+        23,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        64,
+        23,
+        0,
+        0,
+        0,
+        0,
+        48,
+        16,
+        0
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Keypad",
+      "label": "KEYPAD_5",
+      "x": 720,
+      "y": 300,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "pressedKey": "5"
+    },
+    {
+      "id": 5,
+      "type": "Resistor",
+      "label": "RPU1",
+      "x": 900,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 9,
+      "type": "VoltageProbe",
+      "label": "COL1",
+      "x": 1100,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 0.0
+    },
+    {
+      "id": 6,
+      "type": "Resistor",
+      "label": "RPU2",
+      "x": 900,
+      "y": 270,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 10,
+      "type": "VoltageProbe",
+      "label": "COL2",
+      "x": 1100,
+      "y": 270,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 0.0
+    },
+    {
+      "id": 7,
+      "type": "Resistor",
+      "label": "RPU3",
+      "x": 900,
+      "y": 360,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 11,
+      "type": "VoltageProbe",
+      "label": "COL3",
+      "x": 1100,
+      "y": 360,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 0.0
+    },
+    {
+      "id": 8,
+      "type": "Resistor",
+      "label": "RPU4",
+      "x": 900,
+      "y": 450,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 12,
+      "type": "VoltageProbe",
+      "label": "COL4",
+      "x": 1100,
+      "y": 450,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 0.0
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 320.0,
+          "y": 150.0
+        },
+        {
+          "x": 320.0,
+          "y": 250.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "VCC"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 210.0
+        },
+        {
+          "x": 1050.0,
+          "y": 210.0
+        },
+        {
+          "x": 1050.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 360.0,
+          "y": 350.0
+        },
+        {
+          "x": 1050.0,
+          "y": 350.0
+        },
+        {
+          "x": 1050.0,
+          "y": 630.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "GND",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 395.0,
+          "y": 305.0
+        },
+        {
+          "x": 670.0,
+          "y": 305.0
+        },
+        {
+          "x": 670.0,
+          "y": 270.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.4",
+      "endCompId": 4,
+      "endPinName": "R1"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 180.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 5,
+      "endPinName": "A"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 930.0,
+          "y": 180.0
+        },
+        {
+          "x": 770.0,
+          "y": 180.0
+        },
+        {
+          "x": 770.0,
+          "y": 270.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "C1"
+    },
+    {
+      "id": 7,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 770.0,
+          "y": 270.0
+        },
+        {
+          "x": 1100.0,
+          "y": 270.0
+        },
+        {
+          "x": 1100.0,
+          "y": 202.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "C1",
+      "endCompId": 9,
+      "endPinName": "IN"
+    },
+    {
+      "id": 8,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 395.0,
+          "y": 315.0
+        },
+        {
+          "x": 670.0,
+          "y": 315.0
+        },
+        {
+          "x": 670.0,
+          "y": 290.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.5",
+      "endCompId": 4,
+      "endPinName": "R2"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 270.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 6,
+      "endPinName": "A"
+    },
+    {
+      "id": 10,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 930.0,
+          "y": 270.0
+        },
+        {
+          "x": 770.0,
+          "y": 270.0
+        },
+        {
+          "x": 770.0,
+          "y": 290.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "C2"
+    },
+    {
+      "id": 11,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 770.0,
+          "y": 290.0
+        },
+        {
+          "x": 1100.0,
+          "y": 290.0
+        },
+        {
+          "x": 1100.0,
+          "y": 292.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "C2",
+      "endCompId": 10,
+      "endPinName": "IN"
+    },
+    {
+      "id": 12,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 395.0,
+          "y": 325.0
+        },
+        {
+          "x": 670.0,
+          "y": 325.0
+        },
+        {
+          "x": 670.0,
+          "y": 310.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.6",
+      "endCompId": 4,
+      "endPinName": "R3"
+    },
+    {
+      "id": 13,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 360.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 7,
+      "endPinName": "A"
+    },
+    {
+      "id": 14,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 930.0,
+          "y": 360.0
+        },
+        {
+          "x": 770.0,
+          "y": 360.0
+        },
+        {
+          "x": 770.0,
+          "y": 310.0
+        }
+      ],
+      "startCompId": 7,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "C3"
+    },
+    {
+      "id": 15,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 770.0,
+          "y": 310.0
+        },
+        {
+          "x": 1100.0,
+          "y": 310.0
+        },
+        {
+          "x": 1100.0,
+          "y": 382.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "C3",
+      "endCompId": 11,
+      "endPinName": "IN"
+    },
+    {
+      "id": 16,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 395.0,
+          "y": 335.0
+        },
+        {
+          "x": 670.0,
+          "y": 335.0
+        },
+        {
+          "x": 670.0,
+          "y": 330.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "P1.7",
+      "endCompId": 4,
+      "endPinName": "R4"
+    },
+    {
+      "id": 17,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 150.0
+        },
+        {
+          "x": 870.0,
+          "y": 450.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 8,
+      "endPinName": "A"
+    },
+    {
+      "id": 18,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 930.0,
+          "y": 450.0
+        },
+        {
+          "x": 770.0,
+          "y": 450.0
+        },
+        {
+          "x": 770.0,
+          "y": 330.0
+        }
+      ],
+      "startCompId": 8,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "C4"
+    },
+    {
+      "id": 19,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 770.0,
+          "y": 330.0
+        },
+        {
+          "x": 1100.0,
+          "y": 330.0
+        },
+        {
+          "x": 1100.0,
+          "y": 472.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "C4",
+      "endCompId": 12,
+      "endPinName": "IN"
+    }
+  ],
+  "junctions": []
+}

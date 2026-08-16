@@ -1,0 +1,490 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 2200,
+    "height": 1400
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 660,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "DCVoltageSource",
+      "label": "VREF_5V",
+      "x": 100,
+      "y": 230,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 3,
+      "type": "Resistor",
+      "label": "Rtop_10k",
+      "x": 230,
+      "y": 190,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 4,
+      "type": "Resistor",
+      "label": "Rbot_10k",
+      "x": 360,
+      "y": 190,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0
+    },
+    {
+      "id": 5,
+      "type": "SimpleADC",
+      "label": "ADC_4BIT",
+      "x": 560,
+      "y": 190,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "bits": 4,
+      "inputVoltage": 0.0,
+      "vrefMinus": 0.0,
+      "vrefPlus": 5.0,
+      "conversionDelayMs": 10.0,
+      "outputCode": 0
+    },
+    {
+      "id": 6,
+      "type": "SimpleDAC",
+      "label": "DAC_FROM_ADC",
+      "x": 820,
+      "y": 190,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "bits": 4,
+      "input": 0,
+      "vrefMinus": 0.0,
+      "vrefPlus": 5.0,
+      "conversionDelayMs": 10.0,
+      "outputVoltage": 0.0
+    },
+    {
+      "id": 7,
+      "type": "Voltmeter",
+      "label": "VM_DAC_OUT",
+      "x": 1040,
+      "y": 190,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 8,
+      "type": "Oscilloscope",
+      "label": "SCOPE_ADC_DAC",
+      "x": 1120,
+      "y": 360,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "ch1VoltsPerDiv": 1.0,
+      "ch2VoltsPerDiv": 1.0,
+      "timePerDiv": 0.1
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 200.0
+        },
+        {
+          "x": 200.0,
+          "y": 200.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "A"
+    },
+    {
+      "id": 2,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 260.0,
+          "y": 190.0
+        },
+        {
+          "x": 330.0,
+          "y": 190.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "A"
+    },
+    {
+      "id": 3,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 390.0,
+          "y": 190.0
+        },
+        {
+          "x": 450.0,
+          "y": 190.0
+        },
+        {
+          "x": 450.0,
+          "y": 500.0
+        },
+        {
+          "x": 660.0,
+          "y": 500.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "B",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 4,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 260.0
+        },
+        {
+          "x": 100.0,
+          "y": 500.0
+        },
+        {
+          "x": 660.0,
+          "y": 500.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 5,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 260.0,
+          "y": 190.0
+        },
+        {
+          "x": 460.0,
+          "y": 190.0
+        },
+        {
+          "x": 460.0,
+          "y": 170.0
+        },
+        {
+          "x": 488.0,
+          "y": 170.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 5,
+      "endPinName": "VIN"
+    },
+    {
+      "id": 6,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 200.0
+        },
+        {
+          "x": 480.0,
+          "y": 200.0
+        },
+        {
+          "x": 488.0,
+          "y": 190.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 5,
+      "endPinName": "VREF+"
+    },
+    {
+      "id": 7,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 660.0,
+          "y": 500.0
+        },
+        {
+          "x": 480.0,
+          "y": 500.0
+        },
+        {
+          "x": 480.0,
+          "y": 210.0
+        },
+        {
+          "x": 488.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "GND",
+      "endCompId": 5,
+      "endPinName": "VREF-"
+    },
+    {
+      "id": 8,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 632.0,
+          "y": 172.0
+        },
+        {
+          "x": 748.0,
+          "y": 172.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "D0",
+      "endCompId": 6,
+      "endPinName": "D0"
+    },
+    {
+      "id": 9,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 632.0,
+          "y": 184.0
+        },
+        {
+          "x": 748.0,
+          "y": 184.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "D1",
+      "endCompId": 6,
+      "endPinName": "D1"
+    },
+    {
+      "id": 10,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 632.0,
+          "y": 196.0
+        },
+        {
+          "x": 748.0,
+          "y": 196.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "D2",
+      "endCompId": 6,
+      "endPinName": "D2"
+    },
+    {
+      "id": 11,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 632.0,
+          "y": 208.0
+        },
+        {
+          "x": 748.0,
+          "y": 208.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "D3",
+      "endCompId": 6,
+      "endPinName": "D3"
+    },
+    {
+      "id": 12,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 100.0,
+          "y": 200.0
+        },
+        {
+          "x": 788.0,
+          "y": 200.0
+        },
+        {
+          "x": 788.0,
+          "y": 230.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 6,
+      "endPinName": "VREF+"
+    },
+    {
+      "id": 13,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 660.0,
+          "y": 500.0
+        },
+        {
+          "x": 852.0,
+          "y": 500.0
+        },
+        {
+          "x": 852.0,
+          "y": 230.0
+        }
+      ],
+      "startCompId": 1,
+      "startPinName": "GND",
+      "endCompId": 6,
+      "endPinName": "VREF-"
+    },
+    {
+      "id": 14,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 892.0,
+          "y": 190.0
+        },
+        {
+          "x": 1010.0,
+          "y": 190.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "VOUT",
+      "endCompId": 7,
+      "endPinName": "POS"
+    },
+    {
+      "id": 15,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 1070.0,
+          "y": 190.0
+        },
+        {
+          "x": 1070.0,
+          "y": 500.0
+        },
+        {
+          "x": 660.0,
+          "y": 500.0
+        }
+      ],
+      "startCompId": 7,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 16,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 892.0,
+          "y": 190.0
+        },
+        {
+          "x": 1065.0,
+          "y": 190.0
+        },
+        {
+          "x": 1065.0,
+          "y": 348.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "VOUT",
+      "endCompId": 8,
+      "endPinName": "CH1"
+    },
+    {
+      "id": 17,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 488.0,
+          "y": 170.0
+        },
+        {
+          "x": 1080.0,
+          "y": 170.0
+        },
+        {
+          "x": 1080.0,
+          "y": 372.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "VIN",
+      "endCompId": 8,
+      "endPinName": "CH2"
+    },
+    {
+      "id": 18,
+      "manualRoute": true,
+      "path": [
+        {
+          "x": 1065.0,
+          "y": 392.0
+        },
+        {
+          "x": 1065.0,
+          "y": 500.0
+        },
+        {
+          "x": 660.0,
+          "y": 500.0
+        }
+      ],
+      "startCompId": 8,
+      "startPinName": "GND",
+      "endCompId": 1,
+      "endPinName": "GND"
+    }
+  ],
+  "junctions": []
+}

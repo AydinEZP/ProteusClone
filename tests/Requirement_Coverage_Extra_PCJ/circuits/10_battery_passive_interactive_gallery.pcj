@@ -1,0 +1,399 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1400,
+    "height": 900
+  },
+  "components": [
+    {
+      "id": 1,
+      "type": "Ground",
+      "label": "GND",
+      "x": 650,
+      "y": 760,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 2,
+      "type": "Battery",
+      "label": "BAT9",
+      "x": 120,
+      "y": 180,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 9.0
+    },
+    {
+      "id": 3,
+      "type": "Resistor",
+      "label": "R_LED",
+      "x": 300,
+      "y": 150,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 1000.0
+    },
+    {
+      "id": 4,
+      "type": "LED",
+      "label": "LED_BATTERY",
+      "x": 480,
+      "y": 150,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "color_r": 0,
+      "color_g": 220,
+      "color_b": 0
+    },
+    {
+      "id": 5,
+      "type": "DCVoltageSource",
+      "label": "VCC5",
+      "x": 120,
+      "y": 350,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "voltage": 5.0
+    },
+    {
+      "id": 6,
+      "type": "Potentiometer",
+      "label": "POT_10K",
+      "x": 320,
+      "y": 350,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "resistance": 10000.0,
+      "wiper": 0.65
+    },
+    {
+      "id": 7,
+      "type": "Voltmeter",
+      "label": "VM_WIPER",
+      "x": 570,
+      "y": 350,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false
+    },
+    {
+      "id": 8,
+      "type": "Capacitor",
+      "label": "C_100NF",
+      "x": 310,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "capacitance": 1e-07,
+      "capacitance_nF": 100.0
+    },
+    {
+      "id": 9,
+      "type": "Inductor",
+      "label": "L_10MH",
+      "x": 500,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "inductance": 0.01,
+      "inductance_mH": 10.0
+    },
+    {
+      "id": 10,
+      "type": "Switch",
+      "label": "SW_SERIES",
+      "x": 220,
+      "y": 520,
+      "rotation": 0,
+      "mirrorH": false,
+      "mirrorV": false,
+      "closed": true
+    }
+  ],
+  "wires": [
+    {
+      "id": 1,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 150.0
+        },
+        {
+          "x": 270.0,
+          "y": 150.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "POS",
+      "endCompId": 3,
+      "endPinName": "A"
+    },
+    {
+      "id": 2,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 330.0,
+          "y": 150.0
+        },
+        {
+          "x": 455.0,
+          "y": 150.0
+        }
+      ],
+      "startCompId": 3,
+      "startPinName": "B",
+      "endCompId": 4,
+      "endPinName": "A"
+    },
+    {
+      "id": 3,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 505.0,
+          "y": 150.0
+        },
+        {
+          "x": 560.0,
+          "y": 150.0
+        },
+        {
+          "x": 560.0,
+          "y": 210.0
+        },
+        {
+          "x": 120.0,
+          "y": 210.0
+        }
+      ],
+      "startCompId": 4,
+      "startPinName": "K",
+      "endCompId": 2,
+      "endPinName": "NEG"
+    },
+    {
+      "id": 4,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 210.0
+        },
+        {
+          "x": 650.0,
+          "y": 210.0
+        },
+        {
+          "x": 650.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 2,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 5,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 320.0
+        },
+        {
+          "x": 288.0,
+          "y": 350.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "POS",
+      "endCompId": 6,
+      "endPinName": "A"
+    },
+    {
+      "id": 6,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 352.0,
+          "y": 350.0
+        },
+        {
+          "x": 650.0,
+          "y": 350.0
+        },
+        {
+          "x": 650.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "B",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 7,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 320.0,
+          "y": 322.0
+        },
+        {
+          "x": 480.0,
+          "y": 322.0
+        },
+        {
+          "x": 540.0,
+          "y": 350.0
+        }
+      ],
+      "startCompId": 6,
+      "startPinName": "W",
+      "endCompId": 7,
+      "endPinName": "POS"
+    },
+    {
+      "id": 8,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 600.0,
+          "y": 350.0
+        },
+        {
+          "x": 650.0,
+          "y": 350.0
+        },
+        {
+          "x": 650.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 7,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 9,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 380.0
+        },
+        {
+          "x": 650.0,
+          "y": 380.0
+        },
+        {
+          "x": 650.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "NEG",
+      "endCompId": 1,
+      "endPinName": "GND"
+    },
+    {
+      "id": 10,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 120.0,
+          "y": 320.0
+        },
+        {
+          "x": 180.0,
+          "y": 320.0
+        },
+        {
+          "x": 180.0,
+          "y": 520.0
+        },
+        {
+          "x": 195.0,
+          "y": 520.0
+        }
+      ],
+      "startCompId": 5,
+      "startPinName": "POS",
+      "endCompId": 10,
+      "endPinName": "A"
+    },
+    {
+      "id": 11,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 245.0,
+          "y": 520.0
+        },
+        {
+          "x": 280.0,
+          "y": 520.0
+        }
+      ],
+      "startCompId": 10,
+      "startPinName": "B",
+      "endCompId": 8,
+      "endPinName": "A"
+    },
+    {
+      "id": 12,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 340.0,
+          "y": 520.0
+        },
+        {
+          "x": 470.0,
+          "y": 520.0
+        }
+      ],
+      "startCompId": 8,
+      "startPinName": "B",
+      "endCompId": 9,
+      "endPinName": "A"
+    },
+    {
+      "id": 13,
+      "manualRoute": false,
+      "path": [
+        {
+          "x": 530.0,
+          "y": 520.0
+        },
+        {
+          "x": 650.0,
+          "y": 520.0
+        },
+        {
+          "x": 650.0,
+          "y": 740.0
+        }
+      ],
+      "startCompId": 9,
+      "startPinName": "B",
+      "endCompId": 1,
+      "endPinName": "GND"
+    }
+  ],
+  "junctions": []
+}
